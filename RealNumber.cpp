@@ -1,3 +1,9 @@
+/**
+ * @file   RealNumber.hpp
+ * @author Beren Oguz, Alptug Ulugol (kalfmt@gmail.com)
+ * @date   December, 2013
+ * @brief  This file includes the implementation of RealNumber class. It also includes some additional function implementations.
+ */
 /*
 Copyright (c) 2013, Beren Oguz and Alptug Ulugol
 All rights reserved.
