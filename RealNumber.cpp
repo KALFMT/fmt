@@ -5,7 +5,7 @@
  * @brief  This file includes the implementation of RealNumber class. It also includes some additional function implementations.
  */
 /*
-Copyright (c) 2013, Beren Oguz and Alptug Ulugol
+Copyright (c) 2013, 2014 Beren Oguz and Alptug Ulugol
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
@@ -35,7 +35,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 namespace larus
 {
     RealNumber::RealNumber()
-    :value(0)
+    :value(0),dfn(0)
     {
 
     }
@@ -57,8 +57,14 @@ namespace larus
 
     }
 
+    Boolean RealNumber::is_defined() const
+    {
+        return this->dfn;
+    }
+
     const RealNumber& RealNumber::operator = (const RealNumber& operand)
     {
+        this->dfn = true; // Object gains a value here
         this->value = operand.value;
         return *this;
     }
