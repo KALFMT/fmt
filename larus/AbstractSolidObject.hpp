@@ -2,7 +2,7 @@
  * @file   AbstractSolidObject.hpp
  * @author Beren Oguz, Alptug Ulugol (kadikoyanadoluieee@gmail.com)
  * @date   December, 2013
- * @brief  This file includes the implementation of AbstractSolidObject Class.
+ * @brief  This file includes the declaration of AbstractSolidObject Class.
  */
 /*
 Copyright (c) 2013, 2014 Beren Oguz and Alptug Ulugol
