@@ -30,6 +30,8 @@ ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
 SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
+#include <larus/AbstractSolidObject.hpp>
+
 namespace larus
 {
 	void AbstractSolidObject::set_force(const RealNumber& par)
