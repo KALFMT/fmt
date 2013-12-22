@@ -275,152 +275,242 @@ namespace larus
 
 	RealNumber get_force() const
 	{
-
+		/*
+		 * @TODO
+		 * Implement this method!
+		 */
 	}
 
 	RealNumber get_acceleration() const
 	{
-
+		/*
+		 * @TODO
+		 * Implement this method!
+		 */
 	}
 
 	RealNumber get_mass() const
 	{
-
+		/*
+		 * @TODO
+		 * Implement this method!
+		 */
 	}
 
 	RealNumber get_volume() const
 	{
-
+		/*
+		 * @TODO
+		 * Implement this method!
+		 */
 	}
 
 	RealNumber get_density() const
 	{
-
+		/*
+		 * @TODO
+		 * Implement this method!
+		 */
 	}
 
 	RealNumber get_weight() const
 	{
-
+		/*
+		 * @TODO
+		 * Implement this method!
+		 */
 	}
 
 	RealNumber get_angular_momentum() const
 	{
-
+		/*
+		 * @TODO
+		 * Implement this method!
+		 */
 	}
 
 	RealNumber get_momentum() const
 	{
-
+		/*
+		 * @TODO
+		 * Implement this method!
+		 */
 	}
 
 	RealNumber get_surface_area() const
 	{
-
+		/*
+		 * @TODO
+		 * Implement this method!
+		 */
 	}
 
 	RealNumber get_pressure() const
 	{
-
+		/*
+		 * @TODO
+		 * Implement this method!
+		 */
 	}
 
 	RealNumber get_elascity() const
 	{
-
+		/*
+		 * @TODO
+		 * Implement this method!
+		 */
 	}
 
 	RealNumber get_electrical_charge() const
 	{
-
+		/*
+		 * @TODO
+		 * Implement this method!
+		 */
 	}
 
 	RealNumber get_electrical_field() const
 	{
-
+		/*
+		 * @TODO
+		 * Implement this method!
+		 */
 	}
 
 	RealNumber get_electrical_potential() const
 	{
-
+		/*
+		 * @TODO
+		 * Implement this method!
+		 */
 	}
 
 	RealNumber get_electrical_resistivity() const
 	{
-
+		/*
+		 * @TODO
+		 * Implement this method!
+		 */
 	}
 
 	RealNumber get_electrical_impedance() const
 	{
-
+		/*
+		 * @TODO
+		 * Implement this method!
+		 */
 	}
 
 	RealNumber get_electrical_resistance() const
 	{
-
+		/*
+		 * @TODO
+		 * Implement this method!
+		 */
 	}
 
 	RealNumber get_electrical_current() const
 	{
-
+		/*
+		 * @TODO
+		 * Implement this method!
+		 */
 	}
 
 	RealNumber get_fluidity() const
 	{
-
+		/*
+		 * @TODO
+		 * Implement this method!
+		 */
 	}
 
 	RealNumber get_hardness() const
 	{
-
+		/*
+		 * @TODO
+		 * Implement this method!
+		 */
 	}
 
 	RealNumber get_temperature() const
 	{
-
+		/*
+		 * @TODO
+		 * Implement this method!
+		 */
 	}
 
 	RealNumber get_velocity() const
 	{
-
+		/*
+		 * @TODO
+		 * Implement this method!
+		 */
 	}
 
 	RealNumber get_speed() const
 	{
-
+		/*
+		 * @TODO
+		 * Implement this method!
+		 */
 	}
 
 	RealNumber get_tension() const
 	{
-
+		/*
+		 * @TODO
+		 * Implement this method!
+		 */
 	}
 
 	RealNumber get_plane_angle() const
 	{
-
+		/*
+		 * @TODO
+		 * Implement this method!
+		 */
 	}
 
 	RealNumber get_melting_point() const
 	{
-
+		/*
+		 * @TODO
+		 * Implement this method!
+		 */
 	}
 
 	RealNumber get_specific_heat() const
 	{
-
+		/*
+		 * @TODO
+		 * Implement this method!
+		 */
 	}
 
 	RealNumber get_heat_capacity() const
 	{
-
+		/*
+		 * @TODO
+		 * Implement this method!
+		 */
 	}
 
 	RealNumber get_plasticity() const
 	{
-
+		/*
+		 * @TODO
+		 * Implement this method!
+		 */
 	}
 
 	RealNumber get_speed_of_sound() const
 	{
-
+		/*
+		 * @TODO
+		 * Implement this method!
+		 */
 	}
 
 
