@@ -35,7 +35,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  * @brief Solid Object class that has physcial traits
  */
 
-#include <defines.h>
+#include "defines.h"
 
 namespace larus
 {
