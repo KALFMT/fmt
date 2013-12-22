@@ -1,5 +1,5 @@
 /*
-Copyright (c) 2013, Beren Oguz and Alptug Ulugol
+Copyright (c) 2013, 2014, Beren Oguz and Alptug Ulugol
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
@@ -27,8 +27,6 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #ifndef LARUS_REAL_NUMBER
 #define LARUS_REAL_NUMBER
 
-#include <iostream>
-#include <cmath>
 #include "defines.h"
 
 namespace larus
@@ -37,12 +35,15 @@ namespace larus
     {
         private:
             PrimitiveRealNumber value;
+            Boolean dfn;
 
         public:
             RealNumber();
             RealNumber(const RealNumber& operand);
             RealNumber(PrimitiveRealNumber operand);
             ~RealNumber();
+
+            Boolean is_defined() const;
 
             const RealNumber& operator = (const RealNumber& operand);
             const RealNumber& operator += (const RealNumber& operand);
