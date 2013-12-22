@@ -110,6 +110,8 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  * @brief $brief
  */
 
+#include "defines.h"
+
 namespace larus
 {
 	class $name
@@ -159,7 +161,7 @@ ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
 SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <larus/$name.hpp>
+#include "larus/$name.hpp"
 
 namespace larus
 {
