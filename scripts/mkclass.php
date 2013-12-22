@@ -62,7 +62,7 @@ foreach($attributes as $type=>$atts)
    	$setters .= "\t\t\tvoid set_$att(const $type& par);\n";
       $getters .= "\t\t\t$type get_$att() const;\n";
       $privates .= "\t\t\t$type $att;\n";
-      $setter_implemens .= "\tvoid $name::set_$att(const $type& par)\n\t{\n/*\n\t}\n\n";
+      $setter_implemens .= "\tvoid $name::set_$att(const $type& par)\n\t{\n\t\t/*\n\t\t * @TODO\n\t\t * Implement this method!\n\t\t */\n\t}\n\n";
       $getter_implemens .= "\t$type get_$att() const\n\t{\n\n\t}\n\n";
    }
 }
