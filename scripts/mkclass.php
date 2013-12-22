@@ -1,7 +1,7 @@
 <pre>
 <?php
 /*
-Copyright (c) 2013, 2014, Beren Oguz
+Copyright (c) 2013, 2014, Beren Oguz and Alptug Ulugol
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
@@ -27,10 +27,13 @@ ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
 SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 */
 $type = "RealNumber";
-$attr = array("mass","volume","angular_momentum","momentum","surface_area","density","elascity",
-"electrical_charge","electrical_field","electrical_potential","fluidity","hardness","temperature",
-"velocity","speed","tension");
-$name = "ObjectBase";
+$attr = array("force","acceleration","mass","volume","density","weight",
+    "angular_momentum","momentum","surface_area","pressure","elascity",
+    "electrical_charge","electrical_field","electrical_potential",
+    "electrical_resistivity","electrical_impedance","electrical_resistance",
+    "electrical_current","fluidity","hardness","temperature","velocity","speed",
+    "tension","plane_angle","melting_point","specific_heat","heat_capacity","plasticity","speed_of_sound");
+$name = "AbstractSolidObject";
 $attrs="";
 $getters="";
 $setters="";
