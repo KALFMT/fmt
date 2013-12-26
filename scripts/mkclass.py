@@ -38,7 +38,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 name = "AbstractSolidObject"
 brief = "Solid Object class that has physcial traits"
-typeofvar = "ReelNumber"
+typeofvar = "RealNumber"
 attributes = ["force","acceleration","mass","volume","density","weight",
     "angular_momentum","momentum","surface_area","pressure","elascity",
     "electrical_charge","electrical_field","electrical_potential",
@@ -61,10 +61,10 @@ getter_implemens=[]
 attlength=len(attributes)
 for i in range(0,attlength):
     setters.append("\t\t\tvoid set_" + attributes[i] + "(const "+typeofvar+"& par);\n")
-    getters.append("\t\t\t"+typeofvar+" get_"+attributes[i]+"() const;\n")
+    getters.append("\t\t\t"+typeofvar+" get_"+attributes[i]+"();\n")
     privates.append("\t\t\t"+typeofvar+" "+attributes[i]+";\n")
     setter_implemens.append("\tvoid "+name+"::set_"+attributes[i]+"(const "+typeofvar+"& par)\n\t{\n\t\t/*\n\t\t * @TODO\n\t\t * Implement this method!\n\t\t */\n\t}\n\n")
-    getter_implemens.append("\t"+typeofvar+" get_"+attributes[i]+"() const\n\t{\n\t\t/*\n\t\t * @TODO\n\t\t * Implement this method!\n\t\t */\n\t}\n\n")
+    getter_implemens.append("\t"+typeofvar+" "+name+"::get_"+attributes[i]+"()\n\t{\n\t\t/*\n\t\t * @TODO\n\t\t * Implement this method!\n\t\t */\n\t}\n\n")
 
 
 def writehpp(array0):
@@ -131,7 +131,7 @@ with open(name+".hpp", "wt") as hpp_file:
 
     namespace larus
     {
-            class $name
+            class """+name+"""
             {
              public:
     \t\t\t"""+name+"""();
@@ -186,7 +186,7 @@ with open(name+".cpp", "wt") as cpp_file:
     #include "larus/"""+name+""".hpp"
 
     namespace larus
-    {""")
+    {\n""")
     writecpp(setter_implemens)
     writecpp(getter_implemens)
     cpp_file.write("}")
