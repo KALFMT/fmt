@@ -1,22 +1,22 @@
 /**
-* @file AbstractSolidObject.cpp
-* @author Beren Oguz, Alptug Ulugol (kadikoyanadoluieee@gmail.com)
-* @date December, 2013
-* @brief This file includes the implementation of AbstractSolidObject Class.
-* @copyright
+ * @file   AbstractSolidObject.cpp
+ * @author Beren Oguz, Alptug Ulugol (kadikoyanadoluieee@gmail.com)
+ * @date   December, 2013
+ * @brief  This file includes the implementation of AbstractSolidObject Class.
+ * @copyright
 Copyright (c) 2013, 2014 Beren Oguz and Alptug Ulugol
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are met:
-* Redistributions of source code must retain the above copyright
-notice, this list of conditions and the following disclaimer.
-* Redistributions in binary form must reproduce the above copyright
-notice, this list of conditions and the following disclaimer in the
-documentation and/or other materials provided with the distribution.
-* Neither the name of KAL IEEE nor the
-names of its contributors may be used to endorse or promote products
-derived from this software without specific prior written permission.
+    * Redistributions of source code must retain the above copyright
+      notice, this list of conditions and the following disclaimer.
+    * Redistributions in binary form must reproduce the above copyright
+      notice, this list of conditions and the following disclaimer in the
+      documentation and/or other materials provided with the distribution.
+    * Neither the name of KAL IEEE nor the
+      names of its contributors may be used to endorse or promote products
+      derived from this software without specific prior written permission.
 
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
 ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
@@ -28,7 +28,7 @@ LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
 ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
 (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-*/
+ */
 
 #include "larus/AbstractSolidObject.hpp"
 
@@ -275,7 +275,7 @@ namespace larus
 	}
 
 
-	const RealNumber& get_force() const
+	const RealNumber& AbstractSolidObject::get_force() const
 	{
 		/*
 		 * @TODO
@@ -283,7 +283,7 @@ namespace larus
 		 */
 	}
 
-	RealNumber& get_force() 
+	RealNumber& AbstractSolidObject::get_force() 
 	{
 		/*
 		 * @TODO
@@ -291,7 +291,7 @@ namespace larus
 		 */
 	}
 
-	const RealNumber& get_acceleration() const
+	const RealNumber& AbstractSolidObject::get_acceleration() const
 	{
 		/*
 		 * @TODO
@@ -299,7 +299,7 @@ namespace larus
 		 */
 	}
 
-	RealNumber& get_acceleration() 
+	RealNumber& AbstractSolidObject::get_acceleration() 
 	{
 		/*
 		 * @TODO
@@ -307,7 +307,7 @@ namespace larus
 		 */
 	}
 
-	const RealNumber& get_mass() const
+	const RealNumber& AbstractSolidObject::get_mass() const
 	{
 		/*
 		 * @TODO
@@ -315,7 +315,7 @@ namespace larus
 		 */
 	}
 
-	RealNumber& get_mass() 
+	RealNumber& AbstractSolidObject::get_mass() 
 	{
 		/*
 		 * @TODO
@@ -323,7 +323,7 @@ namespace larus
 		 */
 	}
 
-	const RealNumber& get_volume() const
+	const RealNumber& AbstractSolidObject::get_volume() const
 	{
 		/*
 		 * @TODO
@@ -331,7 +331,7 @@ namespace larus
 		 */
 	}
 
-	RealNumber& get_volume() 
+	RealNumber& AbstractSolidObject::get_volume() 
 	{
 		/*
 		 * @TODO
@@ -339,7 +339,7 @@ namespace larus
 		 */
 	}
 
-	const RealNumber& get_density() const
+	const RealNumber& AbstractSolidObject::get_density() const
 	{
 		/*
 		 * @TODO
@@ -347,7 +347,7 @@ namespace larus
 		 */
 	}
 
-	RealNumber& get_density() 
+	RealNumber& AbstractSolidObject::get_density() 
 	{
 		/*
 		 * @TODO
@@ -355,7 +355,7 @@ namespace larus
 		 */
 	}
 
-	const RealNumber& get_weight() const
+	const RealNumber& AbstractSolidObject::get_weight() const
 	{
 		/*
 		 * @TODO
@@ -363,7 +363,7 @@ namespace larus
 		 */
 	}
 
-	RealNumber& get_weight() 
+	RealNumber& AbstractSolidObject::get_weight() 
 	{
 		/*
 		 * @TODO
@@ -371,7 +371,7 @@ namespace larus
 		 */
 	}
 
-	const RealNumber& get_angular_momentum() const
+	const RealNumber& AbstractSolidObject::get_angular_momentum() const
 	{
 		/*
 		 * @TODO
@@ -379,7 +379,7 @@ namespace larus
 		 */
 	}
 
-	RealNumber& get_angular_momentum() 
+	RealNumber& AbstractSolidObject::get_angular_momentum() 
 	{
 		/*
 		 * @TODO
@@ -387,7 +387,7 @@ namespace larus
 		 */
 	}
 
-	const RealNumber& get_momentum() const
+	const RealNumber& AbstractSolidObject::get_momentum() const
 	{
 		/*
 		 * @TODO
@@ -395,7 +395,7 @@ namespace larus
 		 */
 	}
 
-	RealNumber& get_momentum() 
+	RealNumber& AbstractSolidObject::get_momentum() 
 	{
 		/*
 		 * @TODO
@@ -403,7 +403,7 @@ namespace larus
 		 */
 	}
 
-	const RealNumber& get_surface_area() const
+	const RealNumber& AbstractSolidObject::get_surface_area() const
 	{
 		/*
 		 * @TODO
@@ -411,7 +411,7 @@ namespace larus
 		 */
 	}
 
-	RealNumber& get_surface_area() 
+	RealNumber& AbstractSolidObject::get_surface_area() 
 	{
 		/*
 		 * @TODO
@@ -419,7 +419,7 @@ namespace larus
 		 */
 	}
 
-	const RealNumber& get_pressure() const
+	const RealNumber& AbstractSolidObject::get_pressure() const
 	{
 		/*
 		 * @TODO
@@ -427,7 +427,7 @@ namespace larus
 		 */
 	}
 
-	RealNumber& get_pressure() 
+	RealNumber& AbstractSolidObject::get_pressure() 
 	{
 		/*
 		 * @TODO
@@ -435,7 +435,7 @@ namespace larus
 		 */
 	}
 
-	const RealNumber& get_elascity() const
+	const RealNumber& AbstractSolidObject::get_elascity() const
 	{
 		/*
 		 * @TODO
@@ -443,7 +443,7 @@ namespace larus
 		 */
 	}
 
-	RealNumber& get_elascity() 
+	RealNumber& AbstractSolidObject::get_elascity() 
 	{
 		/*
 		 * @TODO
@@ -451,7 +451,7 @@ namespace larus
 		 */
 	}
 
-	const RealNumber& get_electrical_charge() const
+	const RealNumber& AbstractSolidObject::get_electrical_charge() const
 	{
 		/*
 		 * @TODO
@@ -459,7 +459,7 @@ namespace larus
 		 */
 	}
 
-	RealNumber& get_electrical_charge() 
+	RealNumber& AbstractSolidObject::get_electrical_charge() 
 	{
 		/*
 		 * @TODO
@@ -467,7 +467,7 @@ namespace larus
 		 */
 	}
 
-	const RealNumber& get_electrical_field() const
+	const RealNumber& AbstractSolidObject::get_electrical_field() const
 	{
 		/*
 		 * @TODO
@@ -475,7 +475,7 @@ namespace larus
 		 */
 	}
 
-	RealNumber& get_electrical_field() 
+	RealNumber& AbstractSolidObject::get_electrical_field() 
 	{
 		/*
 		 * @TODO
@@ -483,7 +483,7 @@ namespace larus
 		 */
 	}
 
-	const RealNumber& get_electrical_potential() const
+	const RealNumber& AbstractSolidObject::get_electrical_potential() const
 	{
 		/*
 		 * @TODO
@@ -491,7 +491,7 @@ namespace larus
 		 */
 	}
 
-	RealNumber& get_electrical_potential() 
+	RealNumber& AbstractSolidObject::get_electrical_potential() 
 	{
 		/*
 		 * @TODO
@@ -499,7 +499,7 @@ namespace larus
 		 */
 	}
 
-	const RealNumber& get_electrical_resistivity() const
+	const RealNumber& AbstractSolidObject::get_electrical_resistivity() const
 	{
 		/*
 		 * @TODO
@@ -507,7 +507,7 @@ namespace larus
 		 */
 	}
 
-	RealNumber& get_electrical_resistivity() 
+	RealNumber& AbstractSolidObject::get_electrical_resistivity() 
 	{
 		/*
 		 * @TODO
@@ -515,7 +515,7 @@ namespace larus
 		 */
 	}
 
-	const RealNumber& get_electrical_impedance() const
+	const RealNumber& AbstractSolidObject::get_electrical_impedance() const
 	{
 		/*
 		 * @TODO
@@ -523,7 +523,7 @@ namespace larus
 		 */
 	}
 
-	RealNumber& get_electrical_impedance() 
+	RealNumber& AbstractSolidObject::get_electrical_impedance() 
 	{
 		/*
 		 * @TODO
@@ -531,7 +531,7 @@ namespace larus
 		 */
 	}
 
-	const RealNumber& get_electrical_resistance() const
+	const RealNumber& AbstractSolidObject::get_electrical_resistance() const
 	{
 		/*
 		 * @TODO
@@ -539,7 +539,7 @@ namespace larus
 		 */
 	}
 
-	RealNumber& get_electrical_resistance() 
+	RealNumber& AbstractSolidObject::get_electrical_resistance() 
 	{
 		/*
 		 * @TODO
@@ -547,7 +547,7 @@ namespace larus
 		 */
 	}
 
-	const RealNumber& get_electrical_current() const
+	const RealNumber& AbstractSolidObject::get_electrical_current() const
 	{
 		/*
 		 * @TODO
@@ -555,7 +555,7 @@ namespace larus
 		 */
 	}
 
-	RealNumber& get_electrical_current() 
+	RealNumber& AbstractSolidObject::get_electrical_current() 
 	{
 		/*
 		 * @TODO
@@ -563,7 +563,7 @@ namespace larus
 		 */
 	}
 
-	const RealNumber& get_fluidity() const
+	const RealNumber& AbstractSolidObject::get_fluidity() const
 	{
 		/*
 		 * @TODO
@@ -571,7 +571,7 @@ namespace larus
 		 */
 	}
 
-	RealNumber& get_fluidity() 
+	RealNumber& AbstractSolidObject::get_fluidity() 
 	{
 		/*
 		 * @TODO
@@ -579,7 +579,7 @@ namespace larus
 		 */
 	}
 
-	const RealNumber& get_hardness() const
+	const RealNumber& AbstractSolidObject::get_hardness() const
 	{
 		/*
 		 * @TODO
@@ -587,7 +587,7 @@ namespace larus
 		 */
 	}
 
-	RealNumber& get_hardness() 
+	RealNumber& AbstractSolidObject::get_hardness() 
 	{
 		/*
 		 * @TODO
@@ -595,7 +595,7 @@ namespace larus
 		 */
 	}
 
-	const RealNumber& get_temperature() const
+	const RealNumber& AbstractSolidObject::get_temperature() const
 	{
 		/*
 		 * @TODO
@@ -603,7 +603,7 @@ namespace larus
 		 */
 	}
 
-	RealNumber& get_temperature() 
+	RealNumber& AbstractSolidObject::get_temperature() 
 	{
 		/*
 		 * @TODO
@@ -611,7 +611,7 @@ namespace larus
 		 */
 	}
 
-	const RealNumber& get_velocity() const
+	const RealNumber& AbstractSolidObject::get_velocity() const
 	{
 		/*
 		 * @TODO
@@ -619,7 +619,7 @@ namespace larus
 		 */
 	}
 
-	RealNumber& get_velocity() 
+	RealNumber& AbstractSolidObject::get_velocity() 
 	{
 		/*
 		 * @TODO
@@ -627,7 +627,7 @@ namespace larus
 		 */
 	}
 
-	const RealNumber& get_speed() const
+	const RealNumber& AbstractSolidObject::get_speed() const
 	{
 		/*
 		 * @TODO
@@ -635,7 +635,7 @@ namespace larus
 		 */
 	}
 
-	RealNumber& get_speed() 
+	RealNumber& AbstractSolidObject::get_speed() 
 	{
 		/*
 		 * @TODO
@@ -643,7 +643,7 @@ namespace larus
 		 */
 	}
 
-	const RealNumber& get_tension() const
+	const RealNumber& AbstractSolidObject::get_tension() const
 	{
 		/*
 		 * @TODO
@@ -651,7 +651,7 @@ namespace larus
 		 */
 	}
 
-	RealNumber& get_tension() 
+	RealNumber& AbstractSolidObject::get_tension() 
 	{
 		/*
 		 * @TODO
@@ -659,7 +659,7 @@ namespace larus
 		 */
 	}
 
-	const RealNumber& get_plane_angle() const
+	const RealNumber& AbstractSolidObject::get_plane_angle() const
 	{
 		/*
 		 * @TODO
@@ -667,7 +667,7 @@ namespace larus
 		 */
 	}
 
-	RealNumber& get_plane_angle() 
+	RealNumber& AbstractSolidObject::get_plane_angle() 
 	{
 		/*
 		 * @TODO
@@ -675,7 +675,7 @@ namespace larus
 		 */
 	}
 
-	const RealNumber& get_melting_point() const
+	const RealNumber& AbstractSolidObject::get_melting_point() const
 	{
 		/*
 		 * @TODO
@@ -683,7 +683,7 @@ namespace larus
 		 */
 	}
 
-	RealNumber& get_melting_point() 
+	RealNumber& AbstractSolidObject::get_melting_point() 
 	{
 		/*
 		 * @TODO
@@ -691,7 +691,7 @@ namespace larus
 		 */
 	}
 
-	const RealNumber& get_specific_heat() const
+	const RealNumber& AbstractSolidObject::get_specific_heat() const
 	{
 		/*
 		 * @TODO
@@ -699,7 +699,7 @@ namespace larus
 		 */
 	}
 
-	RealNumber& get_specific_heat() 
+	RealNumber& AbstractSolidObject::get_specific_heat() 
 	{
 		/*
 		 * @TODO
@@ -707,7 +707,7 @@ namespace larus
 		 */
 	}
 
-	const RealNumber& get_heat_capacity() const
+	const RealNumber& AbstractSolidObject::get_heat_capacity() const
 	{
 		/*
 		 * @TODO
@@ -715,7 +715,7 @@ namespace larus
 		 */
 	}
 
-	RealNumber& get_heat_capacity() 
+	RealNumber& AbstractSolidObject::get_heat_capacity() 
 	{
 		/*
 		 * @TODO
@@ -723,7 +723,7 @@ namespace larus
 		 */
 	}
 
-	const RealNumber& get_plasticity() const
+	const RealNumber& AbstractSolidObject::get_plasticity() const
 	{
 		/*
 		 * @TODO
@@ -731,7 +731,7 @@ namespace larus
 		 */
 	}
 
-	RealNumber& get_plasticity() 
+	RealNumber& AbstractSolidObject::get_plasticity() 
 	{
 		/*
 		 * @TODO
@@ -739,7 +739,7 @@ namespace larus
 		 */
 	}
 
-	const RealNumber& get_speed_of_sound() const
+	const RealNumber& AbstractSolidObject::get_speed_of_sound() const
 	{
 		/*
 		 * @TODO
@@ -747,7 +747,7 @@ namespace larus
 		 */
 	}
 
-	RealNumber& get_speed_of_sound() 
+	RealNumber& AbstractSolidObject::get_speed_of_sound() 
 	{
 		/*
 		 * @TODO
