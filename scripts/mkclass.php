@@ -168,6 +168,17 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 namespace larus
 {
+
+    AbstractSolidObject::AbstractSolidObject()
+    {
+
+    }
+
+    AbstractSolidObject::~AbstractSolidObject()
+    {
+
+    }
+
 $setter_implemens
 $getter_implemens
 }
