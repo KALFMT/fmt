@@ -41,7 +41,7 @@ namespace larus
     }
 
     RealNumber::RealNumber(const RealNumber& operand)
-    :value(operand.value)
+    :value(operand.value),dfn(operand.dfn)
     {
 
     }
