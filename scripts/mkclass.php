@@ -46,7 +46,9 @@ $attributes = array("RealNumber" => array(
 
 $formulas = array(
 
-"force = mass * acceleration" 
+"force = mass * acceleration",
+"mass = density * volume",
+"mass = force / acceleration",
 
 				);
 	 
@@ -73,7 +75,7 @@ foreach($attributes as $type=>$atts)
 			$forms = explode(" ",$formula);
 			if(in_array($att,$forms) && $forms[0] != $att)
 			{
-				$final = "\n\t\tif(";
+				$final .= "\n\t\tif(";
 				$neg = "!";
 				$bool = "";
 				foreach($forms as $form)
