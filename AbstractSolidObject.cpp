@@ -55,6 +55,10 @@ namespace larus
 	{
 		this->force = par;
 		
+		if((!this->mass.is_defined())&&(this->force.is_defined())&&(this->acceleration.is_defined()))
+		{
+			this->mass = this->force / this->acceleration;
+		}
 		/*
 		 * @TODO
 		 * Implement this method!
@@ -68,6 +72,14 @@ namespace larus
 		if((!this->force.is_defined())&&(this->mass.is_defined())&&(this->acceleration.is_defined()))
 		{
 			this->force = this->mass * this->acceleration;
+		}
+		if((!this->mass.is_defined())&&(this->force.is_defined())&&(this->acceleration.is_defined()))
+		{
+			this->mass = this->force / this->acceleration;
+		}
+		if((!this->mass.is_defined())&&(this->thermometer.is_defined())&&(this->acceleration.is_defined()))
+		{
+			this->mass = this->thermometer / this->acceleration;
 		}
 		/*
 		 * @TODO
@@ -93,6 +105,10 @@ namespace larus
 	{
 		this->volume = par;
 		
+		if((!this->mass.is_defined())&&(this->density.is_defined())&&(this->volume.is_defined()))
+		{
+			this->mass = this->density * this->volume;
+		}
 		/*
 		 * @TODO
 		 * Implement this method!
@@ -103,6 +119,10 @@ namespace larus
 	{
 		this->density = par;
 		
+		if((!this->mass.is_defined())&&(this->density.is_defined())&&(this->volume.is_defined()))
+		{
+			this->mass = this->density * this->volume;
+		}
 		/*
 		 * @TODO
 		 * Implement this method!
@@ -632,4 +652,3 @@ namespace larus
 
 
 }
-
