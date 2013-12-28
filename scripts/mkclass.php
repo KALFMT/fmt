@@ -60,10 +60,12 @@ foreach($attributes as $type=>$atts)
 	foreach($atts as $att)
 	{
    	$setters .= "\t\t\tvoid set_$att(const $type& par);\n";
-      $getters .= "\t\t\t$type get_$att() const;\n";
+      $getters .= "\t\t\tconst $type& get_$att() const;\n";
+      $getters .= "\t\t\t$type& get_$att();\n";
       $privates .= "\t\t\t$type $att;\n";
       $setter_implemens .= "\tvoid $name::set_$att(const $type& par)\n\t{\n\t\t/*\n\t\t * @TODO\n\t\t * Implement this method!\n\t\t */\n\t}\n\n";
-      $getter_implemens .= "\t$type get_$att() const\n\t{\n\t\t/*\n\t\t * @TODO\n\t\t * Implement this method!\n\t\t */\n\t}\n\n";
+      $getter_implemens .= "\tconst $type& get_$att() const\n\t{\n\t\t/*\n\t\t * @TODO\n\t\t * Implement this method!\n\t\t */\n\t}\n\n";
+      $getter_implemens .= "\t$type& get_$att() \n\t{\n\t\t/*\n\t\t * @TODO\n\t\t * Implement this method!\n\t\t */\n\t}\n\n";
    }
 }
 
@@ -111,6 +113,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
 #include "defines.h"
+#include "RealNumber.hpp"
 
 namespace larus
 {
