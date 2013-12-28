@@ -29,6 +29,8 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 #define LARUS_ABSOLUTE_VALUE(x) ((x)<0?(-(x)):(x))
 
+#include <cmath>
+
 namespace larus
 {
     typedef long double PrimitiveRealNumber;
