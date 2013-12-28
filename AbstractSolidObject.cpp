@@ -318,14 +318,16 @@ namespace larus
 
 	const RealNumber& AbstractSolidObject::get_force() const
 	{
+		return this->force;
 		/*
 		 * @TODO
 		 * Implement this method!
 		 */
 	}
 
-	RealNumber& AbstractSolidObject::get_force()
+	RealNumber& AbstractSolidObject::get_force() 
 	{
+		return this->force;
 		/*
 		 * @TODO
 		 * Implement this method!
@@ -334,14 +336,16 @@ namespace larus
 
 	const RealNumber& AbstractSolidObject::get_acceleration() const
 	{
+		return this->acceleration;
 		/*
 		 * @TODO
 		 * Implement this method!
 		 */
 	}
 
-	RealNumber& AbstractSolidObject::get_acceleration()
+	RealNumber& AbstractSolidObject::get_acceleration() 
 	{
+		return this->acceleration;
 		/*
 		 * @TODO
 		 * Implement this method!
@@ -350,14 +354,16 @@ namespace larus
 
 	const RealNumber& AbstractSolidObject::get_mass() const
 	{
+		return this->mass;
 		/*
 		 * @TODO
 		 * Implement this method!
 		 */
 	}
 
-	RealNumber& AbstractSolidObject::get_mass()
+	RealNumber& AbstractSolidObject::get_mass() 
 	{
+		return this->mass;
 		/*
 		 * @TODO
 		 * Implement this method!
@@ -366,14 +372,16 @@ namespace larus
 
 	const RealNumber& AbstractSolidObject::get_volume() const
 	{
+		return this->volume;
 		/*
 		 * @TODO
 		 * Implement this method!
 		 */
 	}
 
-	RealNumber& AbstractSolidObject::get_volume()
+	RealNumber& AbstractSolidObject::get_volume() 
 	{
+		return this->volume;
 		/*
 		 * @TODO
 		 * Implement this method!
@@ -382,14 +390,16 @@ namespace larus
 
 	const RealNumber& AbstractSolidObject::get_density() const
 	{
+		return this->density;
 		/*
 		 * @TODO
 		 * Implement this method!
 		 */
 	}
 
-	RealNumber& AbstractSolidObject::get_density()
+	RealNumber& AbstractSolidObject::get_density() 
 	{
+		return this->density;
 		/*
 		 * @TODO
 		 * Implement this method!
@@ -398,14 +408,16 @@ namespace larus
 
 	const RealNumber& AbstractSolidObject::get_weight() const
 	{
+		return this->weight;
 		/*
 		 * @TODO
 		 * Implement this method!
 		 */
 	}
 
-	RealNumber& AbstractSolidObject::get_weight()
+	RealNumber& AbstractSolidObject::get_weight() 
 	{
+		return this->weight;
 		/*
 		 * @TODO
 		 * Implement this method!
@@ -414,14 +426,16 @@ namespace larus
 
 	const RealNumber& AbstractSolidObject::get_angular_momentum() const
 	{
+		return this->angular_momentum;
 		/*
 		 * @TODO
 		 * Implement this method!
 		 */
 	}
 
-	RealNumber& AbstractSolidObject::get_angular_momentum()
+	RealNumber& AbstractSolidObject::get_angular_momentum() 
 	{
+		return this->angular_momentum;
 		/*
 		 * @TODO
 		 * Implement this method!
@@ -430,14 +444,16 @@ namespace larus
 
 	const RealNumber& AbstractSolidObject::get_momentum() const
 	{
+		return this->momentum;
 		/*
 		 * @TODO
 		 * Implement this method!
 		 */
 	}
 
-	RealNumber& AbstractSolidObject::get_momentum()
+	RealNumber& AbstractSolidObject::get_momentum() 
 	{
+		return this->momentum;
 		/*
 		 * @TODO
 		 * Implement this method!
@@ -446,14 +462,16 @@ namespace larus
 
 	const RealNumber& AbstractSolidObject::get_surface_area() const
 	{
+		return this->surface_area;
 		/*
 		 * @TODO
 		 * Implement this method!
 		 */
 	}
 
-	RealNumber& AbstractSolidObject::get_surface_area()
+	RealNumber& AbstractSolidObject::get_surface_area() 
 	{
+		return this->surface_area;
 		/*
 		 * @TODO
 		 * Implement this method!
@@ -462,14 +480,16 @@ namespace larus
 
 	const RealNumber& AbstractSolidObject::get_pressure() const
 	{
+		return this->pressure;
 		/*
 		 * @TODO
 		 * Implement this method!
 		 */
 	}
 
-	RealNumber& AbstractSolidObject::get_pressure()
+	RealNumber& AbstractSolidObject::get_pressure() 
 	{
+		return this->pressure;
 		/*
 		 * @TODO
 		 * Implement this method!
@@ -478,14 +498,16 @@ namespace larus
 
 	const RealNumber& AbstractSolidObject::get_elascity() const
 	{
+		return this->elascity;
 		/*
 		 * @TODO
 		 * Implement this method!
 		 */
 	}
 
-	RealNumber& AbstractSolidObject::get_elascity()
+	RealNumber& AbstractSolidObject::get_elascity() 
 	{
+		return this->elascity;
 		/*
 		 * @TODO
 		 * Implement this method!
@@ -494,14 +516,16 @@ namespace larus
 
 	const RealNumber& AbstractSolidObject::get_electrical_charge() const
 	{
+		return this->electrical_charge;
 		/*
 		 * @TODO
 		 * Implement this method!
 		 */
 	}
 
-	RealNumber& AbstractSolidObject::get_electrical_charge()
+	RealNumber& AbstractSolidObject::get_electrical_charge() 
 	{
+		return this->electrical_charge;
 		/*
 		 * @TODO
 		 * Implement this method!
@@ -510,14 +534,16 @@ namespace larus
 
 	const RealNumber& AbstractSolidObject::get_electrical_field() const
 	{
+		return this->electrical_field;
 		/*
 		 * @TODO
 		 * Implement this method!
 		 */
 	}
 
-	RealNumber& AbstractSolidObject::get_electrical_field()
+	RealNumber& AbstractSolidObject::get_electrical_field() 
 	{
+		return this->electrical_field;
 		/*
 		 * @TODO
 		 * Implement this method!
@@ -526,14 +552,16 @@ namespace larus
 
 	const RealNumber& AbstractSolidObject::get_electrical_potential() const
 	{
+		return this->electrical_potential;
 		/*
 		 * @TODO
 		 * Implement this method!
 		 */
 	}
 
-	RealNumber& AbstractSolidObject::get_electrical_potential()
+	RealNumber& AbstractSolidObject::get_electrical_potential() 
 	{
+		return this->electrical_potential;
 		/*
 		 * @TODO
 		 * Implement this method!
@@ -542,14 +570,16 @@ namespace larus
 
 	const RealNumber& AbstractSolidObject::get_electrical_resistivity() const
 	{
+		return this->electrical_resistivity;
 		/*
 		 * @TODO
 		 * Implement this method!
 		 */
 	}
 
-	RealNumber& AbstractSolidObject::get_electrical_resistivity()
+	RealNumber& AbstractSolidObject::get_electrical_resistivity() 
 	{
+		return this->electrical_resistivity;
 		/*
 		 * @TODO
 		 * Implement this method!
@@ -558,14 +588,16 @@ namespace larus
 
 	const RealNumber& AbstractSolidObject::get_electrical_impedance() const
 	{
+		return this->electrical_impedance;
 		/*
 		 * @TODO
 		 * Implement this method!
 		 */
 	}
 
-	RealNumber& AbstractSolidObject::get_electrical_impedance()
+	RealNumber& AbstractSolidObject::get_electrical_impedance() 
 	{
+		return this->electrical_impedance;
 		/*
 		 * @TODO
 		 * Implement this method!
@@ -574,14 +606,16 @@ namespace larus
 
 	const RealNumber& AbstractSolidObject::get_electrical_resistance() const
 	{
+		return this->electrical_resistance;
 		/*
 		 * @TODO
 		 * Implement this method!
 		 */
 	}
 
-	RealNumber& AbstractSolidObject::get_electrical_resistance()
+	RealNumber& AbstractSolidObject::get_electrical_resistance() 
 	{
+		return this->electrical_resistance;
 		/*
 		 * @TODO
 		 * Implement this method!
@@ -590,14 +624,16 @@ namespace larus
 
 	const RealNumber& AbstractSolidObject::get_electrical_current() const
 	{
+		return this->electrical_current;
 		/*
 		 * @TODO
 		 * Implement this method!
 		 */
 	}
 
-	RealNumber& AbstractSolidObject::get_electrical_current()
+	RealNumber& AbstractSolidObject::get_electrical_current() 
 	{
+		return this->electrical_current;
 		/*
 		 * @TODO
 		 * Implement this method!
@@ -606,14 +642,16 @@ namespace larus
 
 	const RealNumber& AbstractSolidObject::get_fluidity() const
 	{
+		return this->fluidity;
 		/*
 		 * @TODO
 		 * Implement this method!
 		 */
 	}
 
-	RealNumber& AbstractSolidObject::get_fluidity()
+	RealNumber& AbstractSolidObject::get_fluidity() 
 	{
+		return this->fluidity;
 		/*
 		 * @TODO
 		 * Implement this method!
@@ -622,14 +660,16 @@ namespace larus
 
 	const RealNumber& AbstractSolidObject::get_hardness() const
 	{
+		return this->hardness;
 		/*
 		 * @TODO
 		 * Implement this method!
 		 */
 	}
 
-	RealNumber& AbstractSolidObject::get_hardness()
+	RealNumber& AbstractSolidObject::get_hardness() 
 	{
+		return this->hardness;
 		/*
 		 * @TODO
 		 * Implement this method!
@@ -638,14 +678,16 @@ namespace larus
 
 	const RealNumber& AbstractSolidObject::get_temperature() const
 	{
+		return this->temperature;
 		/*
 		 * @TODO
 		 * Implement this method!
 		 */
 	}
 
-	RealNumber& AbstractSolidObject::get_temperature()
+	RealNumber& AbstractSolidObject::get_temperature() 
 	{
+		return this->temperature;
 		/*
 		 * @TODO
 		 * Implement this method!
@@ -654,14 +696,16 @@ namespace larus
 
 	const RealNumber& AbstractSolidObject::get_velocity() const
 	{
+		return this->velocity;
 		/*
 		 * @TODO
 		 * Implement this method!
 		 */
 	}
 
-	RealNumber& AbstractSolidObject::get_velocity()
+	RealNumber& AbstractSolidObject::get_velocity() 
 	{
+		return this->velocity;
 		/*
 		 * @TODO
 		 * Implement this method!
@@ -670,14 +714,16 @@ namespace larus
 
 	const RealNumber& AbstractSolidObject::get_speed() const
 	{
+		return this->speed;
 		/*
 		 * @TODO
 		 * Implement this method!
 		 */
 	}
 
-	RealNumber& AbstractSolidObject::get_speed()
+	RealNumber& AbstractSolidObject::get_speed() 
 	{
+		return this->speed;
 		/*
 		 * @TODO
 		 * Implement this method!
@@ -686,14 +732,16 @@ namespace larus
 
 	const RealNumber& AbstractSolidObject::get_tension() const
 	{
+		return this->tension;
 		/*
 		 * @TODO
 		 * Implement this method!
 		 */
 	}
 
-	RealNumber& AbstractSolidObject::get_tension()
+	RealNumber& AbstractSolidObject::get_tension() 
 	{
+		return this->tension;
 		/*
 		 * @TODO
 		 * Implement this method!
@@ -702,14 +750,16 @@ namespace larus
 
 	const RealNumber& AbstractSolidObject::get_plane_angle() const
 	{
+		return this->plane_angle;
 		/*
 		 * @TODO
 		 * Implement this method!
 		 */
 	}
 
-	RealNumber& AbstractSolidObject::get_plane_angle()
+	RealNumber& AbstractSolidObject::get_plane_angle() 
 	{
+		return this->plane_angle;
 		/*
 		 * @TODO
 		 * Implement this method!
@@ -718,14 +768,16 @@ namespace larus
 
 	const RealNumber& AbstractSolidObject::get_melting_point() const
 	{
+		return this->melting_point;
 		/*
 		 * @TODO
 		 * Implement this method!
 		 */
 	}
 
-	RealNumber& AbstractSolidObject::get_melting_point()
+	RealNumber& AbstractSolidObject::get_melting_point() 
 	{
+		return this->melting_point;
 		/*
 		 * @TODO
 		 * Implement this method!
@@ -734,14 +786,16 @@ namespace larus
 
 	const RealNumber& AbstractSolidObject::get_specific_heat() const
 	{
+		return this->specific_heat;
 		/*
 		 * @TODO
 		 * Implement this method!
 		 */
 	}
 
-	RealNumber& AbstractSolidObject::get_specific_heat()
+	RealNumber& AbstractSolidObject::get_specific_heat() 
 	{
+		return this->specific_heat;
 		/*
 		 * @TODO
 		 * Implement this method!
@@ -750,14 +804,16 @@ namespace larus
 
 	const RealNumber& AbstractSolidObject::get_heat_capacity() const
 	{
+		return this->heat_capacity;
 		/*
 		 * @TODO
 		 * Implement this method!
 		 */
 	}
 
-	RealNumber& AbstractSolidObject::get_heat_capacity()
+	RealNumber& AbstractSolidObject::get_heat_capacity() 
 	{
+		return this->heat_capacity;
 		/*
 		 * @TODO
 		 * Implement this method!
@@ -766,14 +822,16 @@ namespace larus
 
 	const RealNumber& AbstractSolidObject::get_plasticity() const
 	{
+		return this->plasticity;
 		/*
 		 * @TODO
 		 * Implement this method!
 		 */
 	}
 
-	RealNumber& AbstractSolidObject::get_plasticity()
+	RealNumber& AbstractSolidObject::get_plasticity() 
 	{
+		return this->plasticity;
 		/*
 		 * @TODO
 		 * Implement this method!
@@ -782,14 +840,16 @@ namespace larus
 
 	const RealNumber& AbstractSolidObject::get_speed_of_sound() const
 	{
+		return this->speed_of_sound;
 		/*
 		 * @TODO
 		 * Implement this method!
 		 */
 	}
 
-	RealNumber& AbstractSolidObject::get_speed_of_sound()
+	RealNumber& AbstractSolidObject::get_speed_of_sound() 
 	{
+		return this->speed_of_sound;
 		/*
 		 * @TODO
 		 * Implement this method!
