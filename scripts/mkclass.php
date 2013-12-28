@@ -169,12 +169,12 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 namespace larus
 {
 
-    AbstractSolidObject::AbstractSolidObject()
+    $name::$name()
     {
 
     }
 
-    AbstractSolidObject::~AbstractSolidObject()
+    $name::~$name()
     {
 
     }
