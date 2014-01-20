@@ -201,6 +201,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 #include "defines.h"
 #include "RealNumber.hpp"
+#include "Environment.hpp"
 
 namespace larus
 {
