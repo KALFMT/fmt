@@ -35,13 +35,14 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 namespace larus
 {
 
-	AbstractSolidObject::AbstractSolidObject()
+	AbstractSolidObject::AbstractSolidObject(Environment* env)
+:environemt(env)
 	{
-
+	
 	}
 
 	AbstractSolidObject::AbstractSolidObject(const AbstractSolidObject& par)
-	:force(par.force),acceleration(par.acceleration),mass(par.mass),volume(par.volume),density(par.density),weight(par.weight),angular_momentum(par.angular_momentum),momentum(par.momentum),surface_area(par.surface_area),pressure(par.pressure),elascity(par.elascity),electrical_charge(par.electrical_charge),electrical_field(par.electrical_field),electrical_potential(par.electrical_potential),electrical_resistivity(par.electrical_resistivity),electrical_impedance(par.electrical_impedance),electrical_resistance(par.electrical_resistance),electrical_current(par.electrical_current),fluidity(par.fluidity),hardness(par.hardness),temperature(par.temperature),velocity(par.velocity),speed(par.speed),tension(par.tension),plane_angle(par.plane_angle),melting_point(par.melting_point),specific_heat(par.specific_heat),heat_capacity(par.heat_capacity),plasticity(par.plasticity),speed_of_sound(par.speed_of_sound)
+	:environment(par.environment),force(par.force),acceleration(par.acceleration),mass(par.mass),volume(par.volume),density(par.density),weight(par.weight),angular_momentum(par.angular_momentum),momentum(par.momentum),surface_area(par.surface_area),pressure(par.pressure),elascity(par.elascity),electrical_charge(par.electrical_charge),electrical_field(par.electrical_field),electrical_potential(par.electrical_potential),electrical_resistivity(par.electrical_resistivity),electrical_impedance(par.electrical_impedance),electrical_resistance(par.electrical_resistance),electrical_current(par.electrical_current),fluidity(par.fluidity),hardness(par.hardness),temperature(par.temperature),velocity(par.velocity),speed(par.speed),tension(par.tension),plane_angle(par.plane_angle),melting_point(par.melting_point),specific_heat(par.specific_heat),heat_capacity(par.heat_capacity),mechanical_energy(par.mechanical_energy),kinetic_energy(par.kinetic_energy),potential_energy(par.potential_energy),index_of_refraction(par.index_of_refraction),plasticity(par.plasticity),speed_of_sound(par.speed_of_sound)
 	{
 
 	}
@@ -76,10 +77,6 @@ namespace larus
 		if((!this->mass.is_defined())&&(this->force.is_defined())&&(this->acceleration.is_defined()))
 		{
 			this->mass = this->force / this->acceleration;
-		}
-		if((!this->mass.is_defined())&&(this->thermometer.is_defined())&&(this->acceleration.is_defined()))
-		{
-			this->mass = this->thermometer / this->acceleration;
 		}
 		/*
 		 * @TODO
@@ -359,6 +356,46 @@ namespace larus
 		 */
 	}
 
+	void AbstractSolidObject::set_mechanical_energy(const RealNumber& par)
+	{
+		this->mechanical_energy = par;
+		
+		/*
+		 * @TODO
+		 * Implement this method!
+		 */
+	}
+
+	void AbstractSolidObject::set_kinetic_energy(const RealNumber& par)
+	{
+		this->kinetic_energy = par;
+		
+		/*
+		 * @TODO
+		 * Implement this method!
+		 */
+	}
+
+	void AbstractSolidObject::set_potential_energy(const RealNumber& par)
+	{
+		this->potential_energy = par;
+		
+		/*
+		 * @TODO
+		 * Implement this method!
+		 */
+	}
+
+	void AbstractSolidObject::set_index_of_refraction(const RealNumber& par)
+	{
+		this->index_of_refraction = par;
+		
+		/*
+		 * @TODO
+		 * Implement this method!
+		 */
+	}
+
 	void AbstractSolidObject::set_plasticity(const RealNumber& par)
 	{
 		this->plasticity = par;
@@ -626,6 +663,42 @@ namespace larus
 	const RealNumber& AbstractSolidObject::get_heat_capacity() const
 	{
 		return this->heat_capacity;
+		/*
+		 * @TODO
+		 * Implement this method!
+		 */
+	}
+
+	const RealNumber& AbstractSolidObject::get_mechanical_energy() const
+	{
+		return this->mechanical_energy;
+		/*
+		 * @TODO
+		 * Implement this method!
+		 */
+	}
+
+	const RealNumber& AbstractSolidObject::get_kinetic_energy() const
+	{
+		return this->kinetic_energy;
+		/*
+		 * @TODO
+		 * Implement this method!
+		 */
+	}
+
+	const RealNumber& AbstractSolidObject::get_potential_energy() const
+	{
+		return this->potential_energy;
+		/*
+		 * @TODO
+		 * Implement this method!
+		 */
+	}
+
+	const RealNumber& AbstractSolidObject::get_index_of_refraction() const
+	{
+		return this->index_of_refraction;
 		/*
 		 * @TODO
 		 * Implement this method!
