@@ -37,13 +37,14 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 #include "defines.h"
 #include "RealNumber.hpp"
+#include "Environment.hpp"
 
 namespace larus
 {
 	class AbstractSolidObject
 	{
        	 public:
-			AbstractSolidObject();
+			AbstractSolidObject(Environment* env);
 			AbstractSolidObject(const AbstractSolidObject&);
 			~AbstractSolidObject();
                 
@@ -75,6 +76,10 @@ namespace larus
 			const RealNumber& get_melting_point() const;
 			const RealNumber& get_specific_heat() const;
 			const RealNumber& get_heat_capacity() const;
+			const RealNumber& get_mechanical_energy() const;
+			const RealNumber& get_kinetic_energy() const;
+			const RealNumber& get_potential_energy() const;
+			const RealNumber& get_index_of_refraction() const;
 			const RealNumber& get_plasticity() const;
 			const RealNumber& get_speed_of_sound() const;
 
@@ -106,6 +111,10 @@ namespace larus
 			void set_melting_point(const RealNumber& par);
 			void set_specific_heat(const RealNumber& par);
 			void set_heat_capacity(const RealNumber& par);
+			void set_mechanical_energy(const RealNumber& par);
+			void set_kinetic_energy(const RealNumber& par);
+			void set_potential_energy(const RealNumber& par);
+			void set_index_of_refraction(const RealNumber& par);
 			void set_plasticity(const RealNumber& par);
 			void set_speed_of_sound(const RealNumber& par);
 
@@ -139,8 +148,13 @@ namespace larus
 			RealNumber melting_point;
 			RealNumber specific_heat;
 			RealNumber heat_capacity;
+			RealNumber mechanical_energy;
+			RealNumber kinetic_energy;
+			RealNumber potential_energy;
+			RealNumber index_of_refraction;
 			RealNumber plasticity;
 			RealNumber speed_of_sound;
 
+Environment* environment;
 	};
 }
