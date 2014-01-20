@@ -63,7 +63,7 @@ $getters="";
 $setters="";
 $setter_implemens="";
 $getter_implemens="";
-$copier = ":";
+$copier = ":environment(par.environment),";
 $forms = array();
 
 foreach($attributes as $type=>$atts)
@@ -208,7 +208,7 @@ namespace larus
 	class $name
 	{
        	 public:
-\t\t\t$name();
+\t\t\t$name(Environment* env);
 \t\t\t$name(const $name&);
 \t\t\t~$name();
                 
@@ -257,9 +257,10 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 namespace larus
 {
 
-\t$name::$name()
+\t$name::$name(Environment* env)
+:environemt(env)
 \t{
-
+	
 \t}
 
 \t$name::$name(const $name& par)
