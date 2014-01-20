@@ -41,7 +41,7 @@ $attributes = array("RealNumber" => array(
     "electrical_charge","electrical_field","electrical_potential",
     "electrical_resistivity","electrical_impedance","electrical_resistance",
     "electrical_current","fluidity","hardness","temperature","velocity","speed",
-	 "tension","plane_angle","melting_point","specific_heat","heat_capacity"
+	 "tension","plane_angle","melting_point","specific_heat","heat_capacity",
 	 "mechanical_energy","kinetic_energy","potential_energy","index_of_refraction",
 	 "plasticity","speed_of_sound"));
 
