@@ -216,6 +216,7 @@ $setters
         
         	private:
 $privates
+Environment* environment;
 	};
 }
 /**
