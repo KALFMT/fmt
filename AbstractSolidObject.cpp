@@ -36,9 +36,9 @@ namespace larus
 {
 
 	AbstractSolidObject::AbstractSolidObject(Environment* env)
-:environemt(env)
+:environment(env)
 	{
-	
+
 	}
 
 	AbstractSolidObject::AbstractSolidObject(const AbstractSolidObject& par)
@@ -55,7 +55,7 @@ namespace larus
 	void AbstractSolidObject::set_force(const RealNumber& par)
 	{
 		this->force = par;
-		
+
 		if((!this->mass.is_defined())&&(this->force.is_defined())&&(this->acceleration.is_defined()))
 		{
 			this->mass = this->force / this->acceleration;
@@ -69,7 +69,7 @@ namespace larus
 	void AbstractSolidObject::set_acceleration(const RealNumber& par)
 	{
 		this->acceleration = par;
-		
+
 		if((!this->force.is_defined())&&(this->mass.is_defined())&&(this->acceleration.is_defined()))
 		{
 			this->force = this->mass * this->acceleration;
@@ -87,7 +87,7 @@ namespace larus
 	void AbstractSolidObject::set_mass(const RealNumber& par)
 	{
 		this->mass = par;
-		
+
 		if((!this->force.is_defined())&&(this->mass.is_defined())&&(this->acceleration.is_defined()))
 		{
 			this->force = this->mass * this->acceleration;
@@ -101,7 +101,7 @@ namespace larus
 	void AbstractSolidObject::set_volume(const RealNumber& par)
 	{
 		this->volume = par;
-		
+
 		if((!this->mass.is_defined())&&(this->density.is_defined())&&(this->volume.is_defined()))
 		{
 			this->mass = this->density * this->volume;
@@ -115,7 +115,7 @@ namespace larus
 	void AbstractSolidObject::set_density(const RealNumber& par)
 	{
 		this->density = par;
-		
+
 		if((!this->mass.is_defined())&&(this->density.is_defined())&&(this->volume.is_defined()))
 		{
 			this->mass = this->density * this->volume;
@@ -129,7 +129,7 @@ namespace larus
 	void AbstractSolidObject::set_weight(const RealNumber& par)
 	{
 		this->weight = par;
-		
+
 		/*
 		 * @TODO
 		 * Implement this method!
@@ -139,7 +139,7 @@ namespace larus
 	void AbstractSolidObject::set_angular_momentum(const RealNumber& par)
 	{
 		this->angular_momentum = par;
-		
+
 		/*
 		 * @TODO
 		 * Implement this method!
@@ -149,7 +149,7 @@ namespace larus
 	void AbstractSolidObject::set_momentum(const RealNumber& par)
 	{
 		this->momentum = par;
-		
+
 		/*
 		 * @TODO
 		 * Implement this method!
@@ -159,7 +159,7 @@ namespace larus
 	void AbstractSolidObject::set_surface_area(const RealNumber& par)
 	{
 		this->surface_area = par;
-		
+
 		/*
 		 * @TODO
 		 * Implement this method!
@@ -169,7 +169,7 @@ namespace larus
 	void AbstractSolidObject::set_pressure(const RealNumber& par)
 	{
 		this->pressure = par;
-		
+
 		/*
 		 * @TODO
 		 * Implement this method!
@@ -179,7 +179,7 @@ namespace larus
 	void AbstractSolidObject::set_elascity(const RealNumber& par)
 	{
 		this->elascity = par;
-		
+
 		/*
 		 * @TODO
 		 * Implement this method!
@@ -189,7 +189,7 @@ namespace larus
 	void AbstractSolidObject::set_electrical_charge(const RealNumber& par)
 	{
 		this->electrical_charge = par;
-		
+
 		/*
 		 * @TODO
 		 * Implement this method!
@@ -199,7 +199,7 @@ namespace larus
 	void AbstractSolidObject::set_electrical_field(const RealNumber& par)
 	{
 		this->electrical_field = par;
-		
+
 		/*
 		 * @TODO
 		 * Implement this method!
@@ -209,7 +209,7 @@ namespace larus
 	void AbstractSolidObject::set_electrical_potential(const RealNumber& par)
 	{
 		this->electrical_potential = par;
-		
+
 		/*
 		 * @TODO
 		 * Implement this method!
@@ -219,7 +219,7 @@ namespace larus
 	void AbstractSolidObject::set_electrical_resistivity(const RealNumber& par)
 	{
 		this->electrical_resistivity = par;
-		
+
 		/*
 		 * @TODO
 		 * Implement this method!
@@ -229,7 +229,7 @@ namespace larus
 	void AbstractSolidObject::set_electrical_impedance(const RealNumber& par)
 	{
 		this->electrical_impedance = par;
-		
+
 		/*
 		 * @TODO
 		 * Implement this method!
@@ -239,7 +239,7 @@ namespace larus
 	void AbstractSolidObject::set_electrical_resistance(const RealNumber& par)
 	{
 		this->electrical_resistance = par;
-		
+
 		/*
 		 * @TODO
 		 * Implement this method!
@@ -249,7 +249,7 @@ namespace larus
 	void AbstractSolidObject::set_electrical_current(const RealNumber& par)
 	{
 		this->electrical_current = par;
-		
+
 		/*
 		 * @TODO
 		 * Implement this method!
@@ -259,7 +259,7 @@ namespace larus
 	void AbstractSolidObject::set_fluidity(const RealNumber& par)
 	{
 		this->fluidity = par;
-		
+
 		/*
 		 * @TODO
 		 * Implement this method!
@@ -269,7 +269,7 @@ namespace larus
 	void AbstractSolidObject::set_hardness(const RealNumber& par)
 	{
 		this->hardness = par;
-		
+
 		/*
 		 * @TODO
 		 * Implement this method!
@@ -279,7 +279,7 @@ namespace larus
 	void AbstractSolidObject::set_temperature(const RealNumber& par)
 	{
 		this->temperature = par;
-		
+
 		/*
 		 * @TODO
 		 * Implement this method!
@@ -289,7 +289,7 @@ namespace larus
 	void AbstractSolidObject::set_velocity(const RealNumber& par)
 	{
 		this->velocity = par;
-		
+
 		/*
 		 * @TODO
 		 * Implement this method!
@@ -299,7 +299,7 @@ namespace larus
 	void AbstractSolidObject::set_speed(const RealNumber& par)
 	{
 		this->speed = par;
-		
+
 		/*
 		 * @TODO
 		 * Implement this method!
@@ -309,7 +309,7 @@ namespace larus
 	void AbstractSolidObject::set_tension(const RealNumber& par)
 	{
 		this->tension = par;
-		
+
 		/*
 		 * @TODO
 		 * Implement this method!
@@ -319,7 +319,7 @@ namespace larus
 	void AbstractSolidObject::set_plane_angle(const RealNumber& par)
 	{
 		this->plane_angle = par;
-		
+
 		/*
 		 * @TODO
 		 * Implement this method!
@@ -329,7 +329,7 @@ namespace larus
 	void AbstractSolidObject::set_melting_point(const RealNumber& par)
 	{
 		this->melting_point = par;
-		
+
 		/*
 		 * @TODO
 		 * Implement this method!
@@ -339,7 +339,7 @@ namespace larus
 	void AbstractSolidObject::set_specific_heat(const RealNumber& par)
 	{
 		this->specific_heat = par;
-		
+
 		/*
 		 * @TODO
 		 * Implement this method!
@@ -349,7 +349,7 @@ namespace larus
 	void AbstractSolidObject::set_heat_capacity(const RealNumber& par)
 	{
 		this->heat_capacity = par;
-		
+
 		/*
 		 * @TODO
 		 * Implement this method!
@@ -359,7 +359,7 @@ namespace larus
 	void AbstractSolidObject::set_mechanical_energy(const RealNumber& par)
 	{
 		this->mechanical_energy = par;
-		
+
 		/*
 		 * @TODO
 		 * Implement this method!
@@ -369,7 +369,7 @@ namespace larus
 	void AbstractSolidObject::set_kinetic_energy(const RealNumber& par)
 	{
 		this->kinetic_energy = par;
-		
+
 		/*
 		 * @TODO
 		 * Implement this method!
@@ -379,7 +379,7 @@ namespace larus
 	void AbstractSolidObject::set_potential_energy(const RealNumber& par)
 	{
 		this->potential_energy = par;
-		
+
 		/*
 		 * @TODO
 		 * Implement this method!
@@ -389,7 +389,7 @@ namespace larus
 	void AbstractSolidObject::set_index_of_refraction(const RealNumber& par)
 	{
 		this->index_of_refraction = par;
-		
+
 		/*
 		 * @TODO
 		 * Implement this method!
@@ -399,7 +399,7 @@ namespace larus
 	void AbstractSolidObject::set_plasticity(const RealNumber& par)
 	{
 		this->plasticity = par;
-		
+
 		/*
 		 * @TODO
 		 * Implement this method!
@@ -409,7 +409,7 @@ namespace larus
 	void AbstractSolidObject::set_speed_of_sound(const RealNumber& par)
 	{
 		this->speed_of_sound = par;
-		
+
 		/*
 		 * @TODO
 		 * Implement this method!
