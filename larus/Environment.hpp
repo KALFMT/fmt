@@ -47,18 +47,18 @@ namespace larus
             Environment();
             Environment(const Environment&);
             ~Environment();
-          
+
             const RealNumber& get_speed_of_light_in_vacuum() const;
             const RealNumber& get_sound_of_light_in_vacuum() const;
             const RealNumber& get_gravitational_acceleration() const;
-            
+
             void set_speed_of_light_in_vacuum(const RealNumber&);
             void set_sound_of_light_in_vacuum(const RealNumber&);
             void set_gravitational_acceleration(const RealNumber&);
-          
+
         private:
             RealNumber speed_of_light_in_vacuum;
             RealNumber speed_of_sound_in_air;
             RealNumber gravitational_acceleration;
-    }
+    };
 }
