@@ -69,6 +69,22 @@ namespace larus
             RealNumber operator / (const RealNumber& operand) const;
             RealNumber operator % (const RealNumber& operand) const;
             RealNumber operator ^ (const RealNumber& operand) const;
+
+            RealNumber sin () const;
+            RealNumber cos () const;
+            RealNumber tan () const;
+            RealNumber cot () const;
+            RealNumber sec () const;
+            RealNumber csc () const;
+            RealNumber arcsin () const;
+            RealNumber arccos () const;
+            RealNumber arctan () const;
+            RealNumber arccot () const;
+            RealNumber arcsec () const;
+            RealNumber arccsc () const;
+
+            RealNumber to_degree() const;
+            RealNumber to_radian() const;
     };
 }
 
