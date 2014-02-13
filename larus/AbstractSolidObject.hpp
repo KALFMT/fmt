@@ -47,7 +47,7 @@ namespace larus
 			AbstractSolidObject(Environment* env);
 			AbstractSolidObject(const AbstractSolidObject&);
 			~AbstractSolidObject();
-                
+
 			const RealNumber& get_force() const;
 			const RealNumber& get_acceleration() const;
 			const RealNumber& get_mass() const;
@@ -118,43 +118,42 @@ namespace larus
 			void set_plasticity(const RealNumber& par);
 			void set_speed_of_sound(const RealNumber& par);
 
-        
-        	private:
-			RealNumber force;
-			RealNumber acceleration;
-			RealNumber mass;
-			RealNumber volume;
-			RealNumber density;
-			RealNumber weight;
-			RealNumber angular_momentum;
-			RealNumber momentum;
-			RealNumber surface_area;
-			RealNumber pressure;
-			RealNumber elascity;
-			RealNumber electrical_charge;
-			RealNumber electrical_field;
-			RealNumber electrical_potential;
-			RealNumber electrical_resistivity;
-			RealNumber electrical_impedance;
-			RealNumber electrical_resistance;
-			RealNumber electrical_current;
-			RealNumber fluidity;
-			RealNumber hardness;
-			RealNumber temperature;
-			RealNumber velocity;
-			RealNumber speed;
-			RealNumber tension;
-			RealNumber plane_angle;
-			RealNumber melting_point;
-			RealNumber specific_heat;
-			RealNumber heat_capacity;
-			RealNumber mechanical_energy;
-			RealNumber kinetic_energy;
-			RealNumber potential_energy;
-			RealNumber index_of_refraction;
-			RealNumber plasticity;
-			RealNumber speed_of_sound;
 
-Environment* environment;
+        	private:
+                Environment* environment;
+                RealNumber force;
+                RealNumber acceleration;
+                RealNumber mass;
+                RealNumber volume;
+                RealNumber density;
+                RealNumber weight;
+                RealNumber angular_momentum;
+                RealNumber momentum;
+                RealNumber surface_area;
+                RealNumber pressure;
+                RealNumber elascity;
+                RealNumber electrical_charge;
+                RealNumber electrical_field;
+                RealNumber electrical_potential;
+                RealNumber electrical_resistivity;
+                RealNumber electrical_impedance;
+                RealNumber electrical_resistance;
+                RealNumber electrical_current;
+                RealNumber fluidity;
+                RealNumber hardness;
+                RealNumber temperature;
+                RealNumber velocity;
+                RealNumber speed;
+                RealNumber tension;
+                RealNumber plane_angle;
+                RealNumber melting_point;
+                RealNumber specific_heat;
+                RealNumber heat_capacity;
+                RealNumber mechanical_energy;
+                RealNumber kinetic_energy;
+                RealNumber potential_energy;
+                RealNumber index_of_refraction;
+                RealNumber plasticity;
+                RealNumber speed_of_sound;
 	};
 }
