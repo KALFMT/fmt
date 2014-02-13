@@ -25,31 +25,6 @@ ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
 SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 */
 
-#ifndef LARUS_VECTOR_H
-#define LARUS_VECTOR_H
-
-#include "defines.h"
-
-namespace larus
-{
-    class Vector
-    {
-        private:
-            Dimentions dims;
-
-        public:
-            Vector();
-            RealNumber& operator [] (const String&);
-            Vector operator + (Vector&);
-            Vector operator - (Vector&);
-            RealNumber magnitude();
-            ~Vector();
-    };
-}
-
-#endif // LARUS_VECTOR_H
-
-
 #include "larus/Vector.hpp"
 
 namespace larus
@@ -63,7 +38,7 @@ namespace larus
 
     Vector::~Vector()
     {
-        //dtor
+
     }
 
     RealNumber& Vector::operator [] (const String& at)
@@ -92,5 +67,10 @@ namespace larus
     RealNumber Vector::magnitude()
     {
         return (((this->dims["x"]^2)+(this->dims["y"]^2)+(this->dims["z"]^2))^0.5);
+    }
+
+    RealNumber Vector::angle_between_xy()
+    {
+        return (this->dims["y"]/this->dims["x"]).arctan();
     }
 }
