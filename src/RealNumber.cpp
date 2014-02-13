@@ -165,6 +165,76 @@ namespace larus
     {
         return pow(this->value,operand.value);
     }
+
+    RealNumber RealNumber::sin () const
+    {
+        return std::sin(this->value);
+    }
+
+    RealNumber RealNumber::cos () const
+    {
+        return std::cos(this->value);
+    }
+
+    RealNumber RealNumber::tan () const
+    {
+        return std::tan(this->value);
+    }
+
+    RealNumber RealNumber::cot () const
+    {
+        return this->tan()*(-1);
+    }
+
+    RealNumber RealNumber::sec () const
+    {
+        return this->cos()*(-1);
+    }
+
+    RealNumber RealNumber::csc () const
+    {
+        return this->sin()*(-1);
+    }
+
+    RealNumber RealNumber::arcsin () const
+    {
+        return std::asin(this->value);
+    }
+
+    RealNumber RealNumber::arccos () const
+    {
+        return std::acos(this->value);
+    }
+
+    RealNumber RealNumber::arctan () const
+    {
+        return std::atan(this->value);
+    }
+
+    RealNumber RealNumber::arccot () const
+    {
+        return this->arctan()*(-1);
+    }
+
+    RealNumber RealNumber::arcsec () const
+    {
+        return this->arccos()*(-1);
+    }
+
+    RealNumber RealNumber::arccsc () const
+    {
+        return this->arcsin()*(-1);
+    }
+
+    RealNumber RealNumber::to_degree () const
+    {
+        return this->value/M_PI*180.0;
+    }
+
+    RealNumber RealNumber::to_radian () const
+    {
+        return this->value*M_PI/180.0;
+    }
 }
 
 std::ostream& operator << (std::ostream& stream,const larus::RealNumber& number)
