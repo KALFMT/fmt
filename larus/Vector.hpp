@@ -28,7 +28,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #ifndef LARUS_VECTOR_H
 #define LARUS_VECTOR_H
 
-#include "defines.h"
+#include "larus/defines.h"
 
 namespace larus
 {
@@ -39,11 +39,15 @@ namespace larus
 
         public:
             Vector();
+            ~Vector();
+
             RealNumber& operator [] (const String&);
+
             Vector operator + (Vector&);
             Vector operator - (Vector&);
+
             RealNumber magnitude();
-            ~Vector();
+            RealNumber angle_between_xy();
     };
 }
 
