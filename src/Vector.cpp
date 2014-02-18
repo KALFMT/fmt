@@ -69,8 +69,13 @@ namespace larus
         return (((this->dims["x"]^2)+(this->dims["y"]^2)+(this->dims["z"]^2))^0.5);
     }
 
-    RealNumber Vector::angle_between_xy()
+    RealNumber Vector::argument()
     {
         return (this->dims["y"]/this->dims["x"]).arctan();
+    }
+
+    RealNumber Vector::azimuthal()
+    {
+        return (this->dims["x"]/this->dims["z"]).arctan();
     }
 }
