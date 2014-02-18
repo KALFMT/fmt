@@ -47,7 +47,8 @@ namespace larus
             Vector operator - (Vector&);
 
             RealNumber magnitude();
-            RealNumber angle_between_xy();
+            RealNumber argument();
+            RealNumber azimuthal();
     };
 }
 
