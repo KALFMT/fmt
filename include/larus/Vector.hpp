@@ -49,6 +49,7 @@ namespace larus
 
             RealNumber magnitude() const;
             RealNumber argument() const;
+            RealNumber azimuthal() const;
     };
 }
 
