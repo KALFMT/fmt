@@ -44,7 +44,7 @@ namespace larus
 	class AbstractSolidObject
 	{
        	 public:
-			AbstractSolidObject(Environment* env);
+			AbstractSolidObject();
 			AbstractSolidObject(const AbstractSolidObject&);
 			~AbstractSolidObject();
 
@@ -120,7 +120,6 @@ namespace larus
 
 
         	private:
-                Environment* environment;
                 RealNumber force;
                 RealNumber acceleration;
                 RealNumber mass;
