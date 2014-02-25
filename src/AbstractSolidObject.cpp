@@ -35,14 +35,13 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 namespace larus
 {
 
-	AbstractSolidObject::AbstractSolidObject(Environment* env)
-:environment(env)
+	AbstractSolidObject::AbstractSolidObject()
 	{
 
 	}
 
 	AbstractSolidObject::AbstractSolidObject(const AbstractSolidObject& par)
-	:environment(par.environment),force(par.force),acceleration(par.acceleration),mass(par.mass),volume(par.volume),density(par.density),weight(par.weight),angular_momentum(par.angular_momentum),momentum(par.momentum),surface_area(par.surface_area),pressure(par.pressure),elascity(par.elascity),electrical_charge(par.electrical_charge),electrical_field(par.electrical_field),electrical_potential(par.electrical_potential),electrical_resistivity(par.electrical_resistivity),electrical_impedance(par.electrical_impedance),electrical_resistance(par.electrical_resistance),electrical_current(par.electrical_current),fluidity(par.fluidity),hardness(par.hardness),temperature(par.temperature),velocity(par.velocity),speed(par.speed),tension(par.tension),plane_angle(par.plane_angle),melting_point(par.melting_point),specific_heat(par.specific_heat),heat_capacity(par.heat_capacity),mechanical_energy(par.mechanical_energy),kinetic_energy(par.kinetic_energy),potential_energy(par.potential_energy),index_of_refraction(par.index_of_refraction),plasticity(par.plasticity),speed_of_sound(par.speed_of_sound)
+	:force(par.force),acceleration(par.acceleration),mass(par.mass),volume(par.volume),density(par.density),weight(par.weight),angular_momentum(par.angular_momentum),momentum(par.momentum),surface_area(par.surface_area),pressure(par.pressure),elascity(par.elascity),electrical_charge(par.electrical_charge),electrical_field(par.electrical_field),electrical_potential(par.electrical_potential),electrical_resistivity(par.electrical_resistivity),electrical_impedance(par.electrical_impedance),electrical_resistance(par.electrical_resistance),electrical_current(par.electrical_current),fluidity(par.fluidity),hardness(par.hardness),temperature(par.temperature),velocity(par.velocity),speed(par.speed),tension(par.tension),plane_angle(par.plane_angle),melting_point(par.melting_point),specific_heat(par.specific_heat),heat_capacity(par.heat_capacity),mechanical_energy(par.mechanical_energy),kinetic_energy(par.kinetic_energy),potential_energy(par.potential_energy),index_of_refraction(par.index_of_refraction),plasticity(par.plasticity),speed_of_sound(par.speed_of_sound)
 	{
 
 	}
