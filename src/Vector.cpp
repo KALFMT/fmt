@@ -46,7 +46,7 @@ namespace larus
         return this->dims[at];
     }
 
-    Vector Vector::operator + (Vector& other)
+    Vector Vector::operator + (Vector& other) const
     {
         Vector final;
         final["x"] = this->dims["x"] + other["x"];
@@ -55,7 +55,7 @@ namespace larus
         return final;
     }
 
-    Vector Vector::operator - (Vector& other)
+    Vector Vector::operator - (Vector& other) const
     {
         Vector final;
         final["x"] = this->dims["x"] - other["x"];
@@ -64,17 +64,17 @@ namespace larus
         return final;
     }
 
-    RealNumber Vector::magnitude()
+    RealNumber Vector::magnitude() const
     {
         return (((this->dims["x"]^2)+(this->dims["y"]^2)+(this->dims["z"]^2))^0.5);
     }
 
-    RealNumber Vector::argument()
+    RealNumber Vector::argument() const
     {
         return (this->dims["y"]/this->dims["x"]).arctan();
     }
 
-    RealNumber Vector::azimuthal()
+    RealNumber Vector::azimuthal() const
     {
         return (this->dims["x"]/this->dims["z"]).arctan();
     }
