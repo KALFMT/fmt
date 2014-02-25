@@ -82,6 +82,6 @@ namespace larus
 
     RealNumber Vector::azimuthal() const
     {
-        return (this->operator[]("y")/this->operator[]("x")).arctan();
+        return (this->operator[]("y")/this->operator[]("z")).arctan();
     }
 }
