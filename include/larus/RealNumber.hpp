@@ -55,8 +55,7 @@ namespace larus
 
             Boolean operator == (const RealNumber& operand) const;
             Boolean operator != (const RealNumber& operand) const;
-
-            PrimitiveRealNumber operator * () const;
+            PrimitiveRealNumber get_value() const;
 
             RealNumber& operator ++ ();
             RealNumber operator ++ (int);
