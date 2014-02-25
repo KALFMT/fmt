@@ -38,7 +38,7 @@ int main()
     larus::Vector vector2;
     larus::Vector vector3;
     vector1["x"] = 3;
-    vector2["y"] = 5;
+    vector2["y"] = 4;
     vector3 = vector1 + vector2;
-    std::cout << (vector3.magnitude());
+    std::cout << (vector3.argument().to_degree());
 }
