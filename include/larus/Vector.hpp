@@ -41,14 +41,14 @@ namespace larus
             Vector();
             ~Vector();
 
-            RealNumber& operator [] (const String&);
+            RealNumber& operator [] (const String&) const;
 
-            Vector operator + (Vector&);
-            Vector operator - (Vector&);
+            Vector operator + (Vector&) const;
+            Vector operator - (Vector&) const;
 
-            RealNumber magnitude();
-            RealNumber argument();
-            RealNumber azimuthal();
+            RealNumber magnitude() const;
+            RealNumber argument() const;
+            RealNumber azimuthal() const;
     };
 }
 
