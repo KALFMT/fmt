@@ -31,14 +31,25 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 #include <cmath>
 #include <vector>
+#include <map>
+#include <string>
 
 namespace larus
 {
     typedef long double PrimitiveRealNumber;
     typedef long long int PrimitiveInteger;
     typedef bool Boolean;
-
     typedef int Counter;
+
+    typedef std::string String;
+}
+
+#include "larus/RealNumber.hpp"
+
+namespace larus
+{
+    class RealNumber;
+    typedef std::map<String,RealNumber> Dimentions;
 }
 
 #endif // LARUS_DEFINES
