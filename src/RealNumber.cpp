@@ -95,11 +95,11 @@ namespace larus
 
     const RealNumber& RealNumber::operator %= (const RealNumber& operand)
     {
-        this->value = *(*this % operand);
+        this->value = (*this % operand).get_value();
         return *this;
     }
 
-    PrimitiveRealNumber RealNumber::operator * () const
+    PrimitiveRealNumber RealNumber::get_value() const
     {
         return this->value;
     }
@@ -239,6 +239,6 @@ namespace larus
 
 std::ostream& operator << (std::ostream& stream,const larus::RealNumber& number)
 {
-    stream << (*number);
+    stream << (number.get_value());
     return stream;
 }
