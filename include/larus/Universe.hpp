@@ -1,8 +1,11 @@
+#ifndef LARUS_UNIVERSE
+#define LARUS_UNIVERSE
+
 /**
- * @file   Environment.hpp
+ * @file   Universe.hpp
  * @author Beren Oguz, Alptug Ulugol (kadikoyanadoluieee@gmail.com)
  * @date   January, 2014
- * @brief  This file includes the declaration of Environment Class.
+ * @brief  This file includes the declaration of Universe Class.
  * @copyright
 Copyright (c) 2013, 2014 Beren Oguz and Alptug Ulugol
 All rights reserved.
@@ -31,22 +34,23 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
 /**
- * @class Environment
- * @brief Environment class whose attributes will be environmental scalar physical quantities such as
+ * @class Universe
+ * @brief Universe class whose attributes will be environmental scalar physical quantities such as
                       gravitational acceleration or speed of light constant.
  */
 
-#include "defines.h"
-#include "RealNumber.hpp"
+#include "larus/defines.h"
+#include "larus/RealNumber.hpp"
+#include "larus/AbstractSolidObject.hpp"
 
 namespace larus
 {
-    class Environment
+    class Universe
     {
         public:
-            Environment();
-            Environment(const Environment&);
-            ~Environment();
+            Universe();
+            Universe(const Universe&);
+            ~Universe();
 
             const RealNumber& get_speed_of_light_in_vacuum() const;
             const RealNumber& get_sound_of_light_in_vacuum() const;
@@ -56,9 +60,15 @@ namespace larus
             void set_sound_of_light_in_vacuum(const RealNumber&);
             void set_gravitational_acceleration(const RealNumber&);
 
+            void add(AbstractSolidObject* const);
+
         private:
+            std::vector<AbstractSolidObject*> objects;
+
             RealNumber speed_of_light_in_vacuum;
             RealNumber speed_of_sound_in_air;
             RealNumber gravitational_acceleration;
     };
 }
+
+#endif
