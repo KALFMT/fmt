@@ -1,3 +1,6 @@
+#ifndef LARUS_ABSTRACT_SOLID_OBJECT
+#define LARUS_ABSTRACT_SOLID_OBJECT
+
 /**
  * @file   AbstractSolidObject.hpp
  * @author Beren Oguz, Alptug Ulugol (kadikoyanadoluieee@gmail.com)
@@ -35,9 +38,8 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  * @brief Solid Object class that has physcial traits
  */
 
-#include "defines.h"
-#include "RealNumber.hpp"
-#include "Environment.hpp"
+#include "larus/defines.h"
+#include "larus/RealNumber.hpp"
 
 namespace larus
 {
@@ -156,3 +158,5 @@ namespace larus
                 RealNumber speed_of_sound;
 	};
 }
+
+#endif
