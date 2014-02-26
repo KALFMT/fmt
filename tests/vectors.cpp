@@ -1,8 +1,8 @@
 /**
- * @file   AbstractSolidObject.cpp
+ * @file   vector.cpp
  * @author Beren Oguz, Alptug Ulugol (kadikoyanadoluieee@gmail.com)
  * @date   December, 2013
- * @brief  This file includes the implementation of AbstractSolidObject Class.
+ * @brief  Vectors test file
  * @copyright
 Copyright (c) 2013, 2014 Beren Oguz and Alptug Ulugol
 All rights reserved.
@@ -32,13 +32,21 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 #include "larus.hpp"
 
-int main()
+bool vectors_test()
 {
+    std::cout << "----- TEST 1 / VECTORS -----" << std::endl;
+
     larus::Vector vector1;
     larus::Vector vector2;
     larus::Vector vector3;
+    std::cout << "Vector V1 = (3,0)" << std::endl;
+    std::cout << "Vector V2 = (0,4)" << std::endl;
+    std::cout << "Vector V3 = V1 + V2" << std::endl;
     vector1["x"] = 3;
     vector2["y"] = 4;
     vector3 = vector1 + vector2;
-    std::cout << (vector3.argument().to_degree());
+    std::cout << "arg(V3) = " << (vector3.argument()) << " rad = " << (vector3.argument().to_degree()) << " degree" << std::endl;
+
+    std::cout << "----- END OF TEST 1 -----" << std::endl;
+    return ((int)(vector3.argument().to_degree().get_value()) == 53);
 }
