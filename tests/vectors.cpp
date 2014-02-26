@@ -1,5 +1,5 @@
 /**
- * @file   vector.cpp
+ * @file   vectors.cpp
  * @author Beren Oguz, Alptug Ulugol (kadikoyanadoluieee@gmail.com)
  * @date   December, 2013
  * @brief  Vectors test file
