@@ -84,6 +84,14 @@ namespace larus
 
             RealNumber to_degree() const;
             RealNumber to_radian() const;
+            
+            RealNumber log () const;
+            RealNumber log (const RealNumber& base) const;
+            RealNumber ln () const;
+        
+            RealNumber AbsVal () const;
+            RealNumber sqrt () const;
+            RealNumber cbrt () const;
     };
 }
 
