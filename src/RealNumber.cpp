@@ -49,7 +49,7 @@ namespace larus
     RealNumber::RealNumber(PrimitiveRealNumber operand)
     :value(operand)
     {
-
+        dfn=true;
     }
 
     RealNumber::~RealNumber()
