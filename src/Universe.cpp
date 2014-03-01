@@ -35,9 +35,9 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 namespace larus
 {
     Universe::Universe()
-    :objects(std::vector<AbstractSolidObject*>()), speed_of_light_in_vacuum(299792458), speed_of_sound_in_air(331.45), gravitational_acceleration(9.80665)
+    :objects(std::vector<AbstractSolidObject*>()), speed_of_light_in_vacuum(LARUS_SPEED_OF_LIGHT_IN_VACUUM_ms), speed_of_sound_in_air(LARUS_SPEED_OF_SOUND_IN_AIR_ms), gravitational_acceleration(LARUS_GRAVITATIONAL_ACCELERATION_ON_EARTH)
     {
-
+        
     }
 
     Universe::Universe(const Universe& other)
