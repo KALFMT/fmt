@@ -30,116 +30,332 @@
  SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
+#include "larus/defines.h"
+#include "larus/RealNumber.hpp"
+#include <utility>
 #include <iostream>
-#include "larus.hpp"
+#include <vector>
 
-int main()
+double larus_round(float d, int pp = 8) // pow() doesn't work with unsigned, so made this switch.
+{
+	return int(d * pow(10.0, pp) + .5) /  pow(10.0, pp);
+}
+
+std::pair<larus::Boolean, std::vector<larus::String>> RealNumber_test()
 {
     larus::RealNumber x=123;
     larus::RealNumber y=5;
     larus::RealNumber z=10;
     larus::RealNumber k=4;
     larus::RealNumber l=2;
+    larus::Boolean status = true;
+    std::vector<larus::String> V_ERROR;
     
-    std::cout<<"is_defined() Func. Test(must return 1): "<<x.is_defined()<<std::endl<<std::endl; //Bug Report: is_defined() Func. misbehaves when RealNumber x variable is assigned to a type that is not RealNumber
     
+    //Testing is_defined()
+    if (!x.is_defined())
+    {
+        status = false;
+        V_ERROR.push_back("is_defined() Func. Failed!");
+    }
     
+    //Operator= Test(must return 10)
     x = z;
-    std::cout<<"Operator= Test(must return 10): "<<x<<std::endl;
+    if (((int)(x.get_value())) != 10)
+    {
+        status = false;
+        V_ERROR.push_back("Operator= Failed!");
+    }
     
+    //Operator+= Test(must return 15)
     x += y;
-    std::cout<<"Operator+= Test(must return 15): "<<x<<std::endl;
+    if (((int)(x.get_value())) != 15)
+    {
+        status = false;
+        V_ERROR.push_back("Operator+= Failed!");
+    }
     
+    //Operator-= Test(must return 10)
     x -= y;
-    std::cout<<"Operator-= Test(must return 10): "<<x<<std::endl;
+    if (((int)(x.get_value())) != 10)
+    {
+        status = false;
+        V_ERROR.push_back("Operator-= Failed!");
+    }
     
+    //Operator*= Test(must return 100)
     x *= z;
-    std::cout<<"Operator*= Test(must return 100): "<<x<<std::endl;
-    
+    if (((int)(x.get_value())) != 100)
+    {
+        status = false;
+        V_ERROR.push_back("Operator*= Failed!");
+    }
+ 
+    //Operator/= Test(must return 10)
     x /= z;
-    std::cout<<"Operator/= Test(must return 10): "<<x<<std::endl;
+    if (((int)(x.get_value())) != 10)
+    {
+        status = false;
+        V_ERROR.push_back("Operator/= Failed!");
+    }
     
+    //Operator%= Test(must return 2)
     x %= k;
-    std::cout<<"Operator%= Test(must return 2): "<<x<<std::endl;
+    if (((int)(x.get_value())) != 2)
+    {
+        status = false;
+        V_ERROR.push_back("Operator%= Failed!");
+    }
     
+    //Operator* Test(must return 20)
     x = x * z;
-    std::cout<<"Operator* Test(must return 20): "<<x<<std::endl;
+    if (((int)(x.get_value())) != 20)
+    {
+        status = false;
+        V_ERROR.push_back("Operator* Failed!");
+    }
     
+    //Operator/ Test(must return 10)
     x = x / l;
-    std::cout<<"Operator/ Test(must return 10): "<<x<<std::endl;
+    if (((int)(x.get_value())) != 10)
+    {
+        status = false;
+        V_ERROR.push_back("Operator/ Failed!");
+    }
     
-    std::cout<<"Operator+ Test(must return 15): "<<x+y<<std::endl;
     
-    std::cout<<"Operator- Test(must return 5): "<<x-y<<std::endl;
     
-    std::cout<<"Operator% Test(must return 2): "<<x%k<<std::endl;
+    //Operator+ Test(must return 15)
+    if (((int)((x+y).get_value())) != 15)
+    {
+        status = false;
+        V_ERROR.push_back("Operator+ Failed!");
+    }
     
-    std::cout<<"Operator^ Test(must return 100): "<<(x^l)<<std::endl<<std::endl;
+    //Operator- Test(must return 5)
+    if (((int)((x-y).get_value())) != 5)
+    {
+        status = false;
+        V_ERROR.push_back("Operator- Failed!");
+    }
     
+    //Operator% Test(must return 2)
+    if (((int)((x%k).get_value())) != 2)
+    {
+        status = false;
+        V_ERROR.push_back("Operator% Failed!");
+    }
+    
+    //Operator^ Test(must return 100)
+    if (((int)((x^l).get_value())) != 100)
+    {
+        status = false;
+        V_ERROR.push_back("Operator^ Failed!");
+    }
+    
+    
+    //Operator++ Test(must return 11)
     x++;
-    std::cout<<"Operator++ Test(must return 11): "<<x<<std::endl;
+    if (((int)(x.get_value())) != 11)
+    {
+        status = false;
+        V_ERROR.push_back("Operator++ Failed!");
+    }
     
+    
+    //Operator-- Test(must return 10)
     x--;
-    std::cout<<"Operator-- Test(must return 10): "<<x<<std::endl;
+    if (((int)(x.get_value())) != 10)
+    {
+        status = false;
+        V_ERROR.push_back("Operator-- Failed!");
+    }
     
-    std::cout<<"Operator++ (int) Test(must return 11): "<<++x<<std::endl;
+    //Operator++ (int) Test(must return 11)
+    if (((int)((++x).get_value())) != 11)
+    {
+        status = false;
+        V_ERROR.push_back("Operator++ (int) Failed!");
+    }
     
-    std::cout<<"Operator-- (int) Test(must return 10): "<<--x<<std::endl<<std::endl;
+    //Operator-- (int) Test(must return 10)
+    if (((int)((--x).get_value())) != 10)
+    {
+        status = false;
+        V_ERROR.push_back("Operator-- (int) Failed!");
+    }
     
-    std::cout<<"log() Func. Test(must return 1): "<<x.log() <<std::endl;
+    //log() Func. Test(must return 1)
+    if (((int)(x.log().get_value())) != 1)
+    {
+        status = false;
+        V_ERROR.push_back("log() Func. Failed!");
+    }
     
+    
+    //log(RealNumber& base) Func. Test(must return 2)
     x = 4;
-    std::cout<<"log(RealNumber& base) Func. Test(must return 2): "<<x.log(l) <<std::endl;
+    if (((int)(x.log(l).get_value())) != 2)
+    {
+        status = false;
+        V_ERROR.push_back("log(RealNumber& base) Func. Failed!");
+    }
     
-    x = std::pow(M_E, 3);
-    std::cout<<"ln() Func. Test(must return 3): "<<x.ln() <<std::endl<<std::endl;
     
+    //ln() Func. Test(must return 3): "<<x.ln() <<std::endl<<std::endl;
+    x = (LARUS_E^3);
+    if (larus_round(x.ln().get_value()) != 3)
+    {
+        status = false;
+        V_ERROR.push_back("ln() Func. Failed!");
+        std::cout<<x;
+    }
+    
+    
+    //sqrt() Func. Test(must return 4)
     x = 16;
-    std::cout<<"sqrt() Func. Test(must return 4): "<<x.sqrt() <<std::endl;
+    if (((int)(x.sqrt().get_value())) != 4)
+    {
+        status = false;
+        V_ERROR.push_back("sqrt() Func. Failed!");
+    }
     
+    
+    //cbrt() Func. Test(must return 5)
     x = 125;
-    std::cout<<"cbrt() Func. Test(must return 5): "<<x.cbrt() <<std::endl;
+    if (((int)(x.cbrt().get_value())) != 5)
+    {
+        status = false;
+        V_ERROR.push_back("cbrt() Func Failed!");
+    }
     
+    
+    //AbsVal() Func. Test(must return 6)
     x = -6;
-    std::cout<<"AbsVal() Func. Test(must return 6): "<<x.AbsVal() <<std::endl<<std::endl;
+    if (((int)(x.AbsVal().get_value())) != 6)
+    {
+        status = false;
+        V_ERROR.push_back("AbsVal() Func. Failed!");
+    }
     
+    
+    //to_radian() Func. Test(must return 0.523598776)
     x = 30;
-    x = x.to_radian();
-    std::cout<<"to_radian() Func. Test(must return 0.523598776): "<<x<<std::endl;
+    if (((float)(x.to_radian().get_value())) != 0.523598776f)
+    {
+        status = false;
+        V_ERROR.push_back("to_radian() Func. Failed!");
+    }
     
-    std::cout<<"to_degree() Func. Test(must return 30): "<<x.to_degree()<<std::endl<<std::endl;
+    //to_degree() Func. Test(must return 30)
+    x = LARUS_PI_4;
+    if (((int)(x.to_degree().get_value())) != 45)
+    {
+        status = false;
+        V_ERROR.push_back("to_degree() Func. Failed!");
+    }
     
-    std::cout<<"sin() Func. Test(must return 0.5): "<<x.sin()<<std::endl;
+    //sin() Func. Test(must return 0.7071067812): "<<x.sin()<<std::endl;
+    if (((float)(x.sin().get_value())) != 0.7071067812f)
+    {
+        status = false;
+        V_ERROR.push_back("sin() Func. Failed!");
+    }
     
-    std::cout<<"csc() Func. Test(must return 1): "<<x.csc()<<std::endl;
+    //csc() Func. Test(must return 2)
+    x= ((larus::RealNumber)30).to_radian();
+    if (((int)(x.csc().get_value())) != 2)
+    {
+        status = false;
+        V_ERROR.push_back("csc() Func. Failed!");
+    }
     
-    x=60;
-    std::cout<<"cos() Func. Test(must return 0.5): "<<(x.to_radian()).cos()<<std::endl;
     
-    std::cout<<"sec() Func. Test(must return 2): "<<(x.to_radian()).sec()<<std::endl;
+    //cos() Func. Test(must return 0.5)
+    x=((larus::RealNumber)60).to_radian();
+    if (((double)(x.cos().get_value())) != 0.5)
+    {
+        status = false;
+        V_ERROR.push_back("cos() Func. Failed!");
+    }
     
-    x=1.10714872f;
-    std::cout<<"tan() Func. Test(must return 2): "<<x.tan()<<std::endl;
+    //sec() Func. Test(must return 2)
+    if (((int)(x.sec().get_value())) != 2)
+    {
+        status = false;
+        V_ERROR.push_back("sec() Func. Failed!");
+    }
     
-    std::cout<<"cot() Func. Test(must return 0.5): "<<x.cot()<<std::endl<<std::endl;
     
+    //tan() Func. Test(must return 2)
+    x=1.10714872;
+    if (((int)(x.tan().get_value())) != 2)
+    {
+        status = false;
+        V_ERROR.push_back("tan() Func. Failed!");
+    }
+    
+    //cot() Func. Test(must return 0.5)
+    if (larus_round(x.cot().get_value()) != 0.5)
+    {
+        status = false;
+        V_ERROR.push_back("cot() Func. Failed!");
+        x=x.cot()+0.0000001f;
+    }
+    
+    
+    //arcsin() Func. Test(must return 30)
     x = 0.5;
-    std::cout<<"arcsin() Func. Test(must return 30): "<<(x.arcsin()).to_degree()<<std::endl;
+    if (((int)(x.arcsin().to_degree().get_value())) != 30)
+    {
+        status = false;
+        V_ERROR.push_back("arcsin() Func. Failed!");
+    }
     
+    
+    //arccsc() Func. Test(must return 30)
     x = 2;
-    std::cout<<"arccsc() Func. Test(must return 30): "<<(x.arccsc()).to_degree()<<std::endl;
+    if (((int)(x.arccsc().to_degree().get_value())) != 30)
+    {
+        status = false;
+        V_ERROR.push_back("arccsc() Func. Failed!");
+    }
     
+    
+    //arccos() Func. Test(must return 60)
     x=0.5;
-    std::cout<<"arccos() Func. Test(must return 60): "<<(x.arccos()).to_degree()<<std::endl;
+    if (((int)(x.arccos().to_degree().get_value())) != 60)
+    {
+        status = false;
+        V_ERROR.push_back("arccos() Func. Failed!");
+    }
     
+    
+    //arcsec() Func. Test(must return 60)
     x=2;
-    std::cout<<"arcsec() Func. Test(must return 60): "<<(x.arcsec()).to_degree()<<std::endl;
-    
-    x=2;
-    std::cout<<"arctan() Func. Test(must return 63.4349489): "<<(x.arctan()).to_degree()<<std::endl;
-    
-    x=0.5;
-    std::cout<<"arccot() Func. Test(must return 63.4349489): "<<(x.arccot()).to_degree()<<std::endl<<std::endl;
+    if (((int)(x.arcsec().to_degree().get_value())) != 60)
+    {
+        status = false;
+        V_ERROR.push_back("arcsec() Func. Failed!");
+    }
     
     
+    //arctan() Func. Test(must return 45)
+    x=1;
+    if (((int)(x.arctan().to_degree().get_value())) != 45)
+    {
+        status = false;
+        V_ERROR.push_back("arctan() Func. Failed!");
+    }
+    
+    //arccot() Func. Test(must return 45)
+    if (((int)(x.arccot().to_degree().get_value())) != 45)
+    {
+        status = false;
+        V_ERROR.push_back("arccot() Func. Failed!");
+    }
+    
+
+    std::pair<larus::Boolean, std::vector<larus::String>> ans(status,V_ERROR);
+    return ans;
 }
