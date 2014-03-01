@@ -31,6 +31,6 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include "larus/defines.h"
 #include "larus/RealNumber.hpp"
 #include "larus/Vector.hpp"
-#include "larus/GeometricCalculations.hpp"
+
 
 #endif // LARUS_HPP
