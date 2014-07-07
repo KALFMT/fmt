@@ -118,17 +118,17 @@ namespace larus
     {
         return this->value * operand.value;
     }
-    
+
     RealNumber RealNumber::operator / (const RealNumber& operand) const
     {
         return this->value / operand.value;
     }
-    
+
     RealNumber RealNumber::operator % (const RealNumber& operand) const
     {
         return (PrimitiveInteger)this->value % (PrimitiveInteger)operand.value;
     }
-    
+
     RealNumber RealNumber::operator ^ (const RealNumber& operand) const
     {
         return pow(this->value,operand.value);
@@ -235,32 +235,32 @@ namespace larus
     {
         return this->value*M_PI/180.0;
     }
-    
+
     RealNumber RealNumber::log() const
     {
         return log10l(this->value);
     }
-    
+
     RealNumber RealNumber::log(const RealNumber& base) const
     {
-        return std::log10l(this->value) / std::log10l(base.value);
+        return std::log10(this->value) / std::log10(base.value);
     }
-    
+
     RealNumber RealNumber::ln() const
     {
         return std::log(this->value);
     }
-    
+
     RealNumber RealNumber::AbsVal () const
     {
-        return std::llabs(this->value);
+        return std::abs(this->value);
     }
-    
+
     RealNumber RealNumber::sqrt () const
     {
         return std::pow(this->value,0.5);
     }
-    
+
     RealNumber RealNumber::cbrt () const
     {
         return std::cbrt(this->value);
