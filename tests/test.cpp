@@ -3,6 +3,8 @@
 #include <utility>
 #include <vector>
 #include <string>
+#include <stdexcept>
+#include <ginac/ginac.h>
 
 bool vectors_test();
 bool kinematics_1_test();
