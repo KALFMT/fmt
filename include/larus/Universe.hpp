@@ -40,7 +40,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
 #include "larus/defines.h"
-#include "larus/RealNumber.hpp"
+#include "larus/Number.hpp"
 #include "larus/AbstractSolidObject.hpp"
 
 namespace larus
@@ -52,22 +52,22 @@ namespace larus
             Universe(const Universe&);
             ~Universe();
 
-            const RealNumber& get_speed_of_light_in_vacuum() const;
-            const RealNumber& get_sound_of_light_in_vacuum() const;
-            const RealNumber& get_gravitational_acceleration() const;
+            const Number& get_speed_of_light_in_vacuum() const;
+            const Number& get_sound_of_light_in_vacuum() const;
+            const Number& get_gravitational_acceleration() const;
 
-            void set_speed_of_light_in_vacuum(const RealNumber&);
-            void set_sound_of_light_in_vacuum(const RealNumber&);
-            void set_gravitational_acceleration(const RealNumber&);
+            void set_speed_of_light_in_vacuum(const Number&);
+            void set_sound_of_light_in_vacuum(const Number&);
+            void set_gravitational_acceleration(const Number&);
 
             void add(AbstractSolidObject* const);
 
         private:
             std::vector<AbstractSolidObject*> objects;
 
-            RealNumber speed_of_light_in_vacuum;
-            RealNumber speed_of_sound_in_air;
-            RealNumber gravitational_acceleration;
+            Number speed_of_light_in_vacuum;
+            Number speed_of_sound_in_air;
+            Number gravitational_acceleration;
     };
 }
 

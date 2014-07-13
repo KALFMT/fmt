@@ -29,7 +29,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #define LARUS_HPP
 
 #include "larus/defines.h"
-#include "larus/RealNumber.hpp"
+#include "larus/Number.hpp"
 #include "larus/Vector.hpp"
 
 

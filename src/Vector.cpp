@@ -41,14 +41,14 @@ namespace larus
 
     }
 
-    RealNumber& Vector::operator [] (const String& at)
+    Number& Vector::operator [] (const String& at)
     {
         return this->dims[at];
     }
 
-    RealNumber Vector::operator [] (const String& at) const
+    Number Vector::operator [] (const String& at) const
     {
-        RealNumber final(this->dims.find(at)->second);
+        Number final(this->dims.find(at)->second);
         return final;
     }
 
@@ -70,17 +70,17 @@ namespace larus
         return final;
     }
 
-    RealNumber Vector::magnitude() const
+    Number Vector::magnitude() const
     {
         return (((this->operator[]("x")^2)+(this->operator[]("y")^2)+(this->operator[]("z")^2))^0.5);
     }
 
-    RealNumber Vector::argument() const
+    Number Vector::argument() const
     {
         return (this->operator[]("y")/this->operator[]("x")).arctan();
     }
 
-    RealNumber Vector::azimuthal() const
+    Number Vector::azimuthal() const
     {
         return (this->operator[]("y")/this->operator[]("z")).arctan();
     }

@@ -54,32 +54,32 @@ namespace larus
         }
     }
 
-    const RealNumber& Universe::get_speed_of_light_in_vacuum() const
+    const Number& Universe::get_speed_of_light_in_vacuum() const
     {
         return this->speed_of_light_in_vacuum;
     }
 
-    const RealNumber& Universe::get_sound_of_light_in_vacuum() const
+    const Number& Universe::get_sound_of_light_in_vacuum() const
     {
         return this->speed_of_sound_in_air;
     }
 
-    const RealNumber& Universe::get_gravitational_acceleration() const
+    const Number& Universe::get_gravitational_acceleration() const
     {
         return this->gravitational_acceleration;
     }
 
-    void Universe::set_speed_of_light_in_vacuum(const RealNumber& par)
+    void Universe::set_speed_of_light_in_vacuum(const Number& par)
     {
         this->speed_of_light_in_vacuum = par;
     }
 
-    void Universe::set_sound_of_light_in_vacuum(const RealNumber& par)
+    void Universe::set_sound_of_light_in_vacuum(const Number& par)
     {
         this->speed_of_sound_in_air = par;
     }
 
-    void Universe::set_gravitational_acceleration(const RealNumber& par)
+    void Universe::set_gravitational_acceleration(const Number& par)
     {
         this->gravitational_acceleration = par;
     }

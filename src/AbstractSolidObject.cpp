@@ -51,7 +51,7 @@ namespace larus
 
 	}
 
-	void AbstractSolidObject::set_force(const RealNumber& par)
+	void AbstractSolidObject::set_force(const Number& par)
 	{
 		this->force = par;
 
@@ -65,7 +65,7 @@ namespace larus
 		 */
 	}
 
-	void AbstractSolidObject::set_acceleration(const RealNumber& par)
+	void AbstractSolidObject::set_acceleration(const Number& par)
 	{
 		this->acceleration = par;
 
@@ -83,7 +83,7 @@ namespace larus
 		 */
 	}
 
-	void AbstractSolidObject::set_mass(const RealNumber& par)
+	void AbstractSolidObject::set_mass(const Number& par)
 	{
 		this->mass = par;
 
@@ -97,7 +97,7 @@ namespace larus
 		 */
 	}
 
-	void AbstractSolidObject::set_volume(const RealNumber& par)
+	void AbstractSolidObject::set_volume(const Number& par)
 	{
 		this->volume = par;
 
@@ -111,7 +111,7 @@ namespace larus
 		 */
 	}
 
-	void AbstractSolidObject::set_density(const RealNumber& par)
+	void AbstractSolidObject::set_density(const Number& par)
 	{
 		this->density = par;
 
@@ -125,7 +125,7 @@ namespace larus
 		 */
 	}
 
-	void AbstractSolidObject::set_weight(const RealNumber& par)
+	void AbstractSolidObject::set_weight(const Number& par)
 	{
 		this->weight = par;
 
@@ -135,7 +135,7 @@ namespace larus
 		 */
 	}
 
-	void AbstractSolidObject::set_angular_momentum(const RealNumber& par)
+	void AbstractSolidObject::set_angular_momentum(const Number& par)
 	{
 		this->angular_momentum = par;
 
@@ -145,7 +145,7 @@ namespace larus
 		 */
 	}
 
-	void AbstractSolidObject::set_momentum(const RealNumber& par)
+	void AbstractSolidObject::set_momentum(const Number& par)
 	{
 		this->momentum = par;
 
@@ -155,7 +155,7 @@ namespace larus
 		 */
 	}
 
-	void AbstractSolidObject::set_surface_area(const RealNumber& par)
+	void AbstractSolidObject::set_surface_area(const Number& par)
 	{
 		this->surface_area = par;
 
@@ -165,7 +165,7 @@ namespace larus
 		 */
 	}
 
-	void AbstractSolidObject::set_pressure(const RealNumber& par)
+	void AbstractSolidObject::set_pressure(const Number& par)
 	{
 		this->pressure = par;
 
@@ -175,7 +175,7 @@ namespace larus
 		 */
 	}
 
-	void AbstractSolidObject::set_elascity(const RealNumber& par)
+	void AbstractSolidObject::set_elascity(const Number& par)
 	{
 		this->elascity = par;
 
@@ -185,7 +185,7 @@ namespace larus
 		 */
 	}
 
-	void AbstractSolidObject::set_electrical_charge(const RealNumber& par)
+	void AbstractSolidObject::set_electrical_charge(const Number& par)
 	{
 		this->electrical_charge = par;
 
@@ -195,7 +195,7 @@ namespace larus
 		 */
 	}
 
-	void AbstractSolidObject::set_electrical_field(const RealNumber& par)
+	void AbstractSolidObject::set_electrical_field(const Number& par)
 	{
 		this->electrical_field = par;
 
@@ -205,7 +205,7 @@ namespace larus
 		 */
 	}
 
-	void AbstractSolidObject::set_electrical_potential(const RealNumber& par)
+	void AbstractSolidObject::set_electrical_potential(const Number& par)
 	{
 		this->electrical_potential = par;
 
@@ -215,7 +215,7 @@ namespace larus
 		 */
 	}
 
-	void AbstractSolidObject::set_electrical_resistivity(const RealNumber& par)
+	void AbstractSolidObject::set_electrical_resistivity(const Number& par)
 	{
 		this->electrical_resistivity = par;
 
@@ -225,7 +225,7 @@ namespace larus
 		 */
 	}
 
-	void AbstractSolidObject::set_electrical_impedance(const RealNumber& par)
+	void AbstractSolidObject::set_electrical_impedance(const Number& par)
 	{
 		this->electrical_impedance = par;
 
@@ -235,7 +235,7 @@ namespace larus
 		 */
 	}
 
-	void AbstractSolidObject::set_electrical_resistance(const RealNumber& par)
+	void AbstractSolidObject::set_electrical_resistance(const Number& par)
 	{
 		this->electrical_resistance = par;
 
@@ -245,7 +245,7 @@ namespace larus
 		 */
 	}
 
-	void AbstractSolidObject::set_electrical_current(const RealNumber& par)
+	void AbstractSolidObject::set_electrical_current(const Number& par)
 	{
 		this->electrical_current = par;
 
@@ -255,7 +255,7 @@ namespace larus
 		 */
 	}
 
-	void AbstractSolidObject::set_fluidity(const RealNumber& par)
+	void AbstractSolidObject::set_fluidity(const Number& par)
 	{
 		this->fluidity = par;
 
@@ -265,7 +265,7 @@ namespace larus
 		 */
 	}
 
-	void AbstractSolidObject::set_hardness(const RealNumber& par)
+	void AbstractSolidObject::set_hardness(const Number& par)
 	{
 		this->hardness = par;
 
@@ -275,7 +275,7 @@ namespace larus
 		 */
 	}
 
-	void AbstractSolidObject::set_temperature(const RealNumber& par)
+	void AbstractSolidObject::set_temperature(const Number& par)
 	{
 		this->temperature = par;
 
@@ -285,7 +285,7 @@ namespace larus
 		 */
 	}
 
-	void AbstractSolidObject::set_velocity(const RealNumber& par)
+	void AbstractSolidObject::set_velocity(const Number& par)
 	{
 		this->velocity = par;
 
@@ -295,7 +295,7 @@ namespace larus
 		 */
 	}
 
-	void AbstractSolidObject::set_speed(const RealNumber& par)
+	void AbstractSolidObject::set_speed(const Number& par)
 	{
 		this->speed = par;
 
@@ -305,7 +305,7 @@ namespace larus
 		 */
 	}
 
-	void AbstractSolidObject::set_tension(const RealNumber& par)
+	void AbstractSolidObject::set_tension(const Number& par)
 	{
 		this->tension = par;
 
@@ -315,7 +315,7 @@ namespace larus
 		 */
 	}
 
-	void AbstractSolidObject::set_plane_angle(const RealNumber& par)
+	void AbstractSolidObject::set_plane_angle(const Number& par)
 	{
 		this->plane_angle = par;
 
@@ -325,7 +325,7 @@ namespace larus
 		 */
 	}
 
-	void AbstractSolidObject::set_melting_point(const RealNumber& par)
+	void AbstractSolidObject::set_melting_point(const Number& par)
 	{
 		this->melting_point = par;
 
@@ -335,7 +335,7 @@ namespace larus
 		 */
 	}
 
-	void AbstractSolidObject::set_specific_heat(const RealNumber& par)
+	void AbstractSolidObject::set_specific_heat(const Number& par)
 	{
 		this->specific_heat = par;
 
@@ -345,7 +345,7 @@ namespace larus
 		 */
 	}
 
-	void AbstractSolidObject::set_heat_capacity(const RealNumber& par)
+	void AbstractSolidObject::set_heat_capacity(const Number& par)
 	{
 		this->heat_capacity = par;
 
@@ -355,7 +355,7 @@ namespace larus
 		 */
 	}
 
-	void AbstractSolidObject::set_mechanical_energy(const RealNumber& par)
+	void AbstractSolidObject::set_mechanical_energy(const Number& par)
 	{
 		this->mechanical_energy = par;
 
@@ -365,7 +365,7 @@ namespace larus
 		 */
 	}
 
-	void AbstractSolidObject::set_kinetic_energy(const RealNumber& par)
+	void AbstractSolidObject::set_kinetic_energy(const Number& par)
 	{
 		this->kinetic_energy = par;
 
@@ -375,7 +375,7 @@ namespace larus
 		 */
 	}
 
-	void AbstractSolidObject::set_potential_energy(const RealNumber& par)
+	void AbstractSolidObject::set_potential_energy(const Number& par)
 	{
 		this->potential_energy = par;
 
@@ -385,7 +385,7 @@ namespace larus
 		 */
 	}
 
-	void AbstractSolidObject::set_index_of_refraction(const RealNumber& par)
+	void AbstractSolidObject::set_index_of_refraction(const Number& par)
 	{
 		this->index_of_refraction = par;
 
@@ -395,7 +395,7 @@ namespace larus
 		 */
 	}
 
-	void AbstractSolidObject::set_plasticity(const RealNumber& par)
+	void AbstractSolidObject::set_plasticity(const Number& par)
 	{
 		this->plasticity = par;
 
@@ -405,7 +405,7 @@ namespace larus
 		 */
 	}
 
-	void AbstractSolidObject::set_speed_of_sound(const RealNumber& par)
+	void AbstractSolidObject::set_speed_of_sound(const Number& par)
 	{
 		this->speed_of_sound = par;
 
@@ -416,7 +416,7 @@ namespace larus
 	}
 
 
-	const RealNumber& AbstractSolidObject::get_force() const
+	const Number& AbstractSolidObject::get_force() const
 	{
 		return this->force;
 		/*
@@ -425,7 +425,7 @@ namespace larus
 		 */
 	}
 
-	const RealNumber& AbstractSolidObject::get_acceleration() const
+	const Number& AbstractSolidObject::get_acceleration() const
 	{
 		return this->acceleration;
 		/*
@@ -434,7 +434,7 @@ namespace larus
 		 */
 	}
 
-	const RealNumber& AbstractSolidObject::get_mass() const
+	const Number& AbstractSolidObject::get_mass() const
 	{
 		return this->mass;
 		/*
@@ -443,7 +443,7 @@ namespace larus
 		 */
 	}
 
-	const RealNumber& AbstractSolidObject::get_volume() const
+	const Number& AbstractSolidObject::get_volume() const
 	{
 		return this->volume;
 		/*
@@ -452,7 +452,7 @@ namespace larus
 		 */
 	}
 
-	const RealNumber& AbstractSolidObject::get_density() const
+	const Number& AbstractSolidObject::get_density() const
 	{
 		return this->density;
 		/*
@@ -461,7 +461,7 @@ namespace larus
 		 */
 	}
 
-	const RealNumber& AbstractSolidObject::get_weight() const
+	const Number& AbstractSolidObject::get_weight() const
 	{
 		return this->weight;
 		/*
@@ -470,7 +470,7 @@ namespace larus
 		 */
 	}
 
-	const RealNumber& AbstractSolidObject::get_angular_momentum() const
+	const Number& AbstractSolidObject::get_angular_momentum() const
 	{
 		return this->angular_momentum;
 		/*
@@ -479,7 +479,7 @@ namespace larus
 		 */
 	}
 
-	const RealNumber& AbstractSolidObject::get_momentum() const
+	const Number& AbstractSolidObject::get_momentum() const
 	{
 		return this->momentum;
 		/*
@@ -488,7 +488,7 @@ namespace larus
 		 */
 	}
 
-	const RealNumber& AbstractSolidObject::get_surface_area() const
+	const Number& AbstractSolidObject::get_surface_area() const
 	{
 		return this->surface_area;
 		/*
@@ -497,7 +497,7 @@ namespace larus
 		 */
 	}
 
-	const RealNumber& AbstractSolidObject::get_pressure() const
+	const Number& AbstractSolidObject::get_pressure() const
 	{
 		return this->pressure;
 		/*
@@ -506,7 +506,7 @@ namespace larus
 		 */
 	}
 
-	const RealNumber& AbstractSolidObject::get_elascity() const
+	const Number& AbstractSolidObject::get_elascity() const
 	{
 		return this->elascity;
 		/*
@@ -515,7 +515,7 @@ namespace larus
 		 */
 	}
 
-	const RealNumber& AbstractSolidObject::get_electrical_charge() const
+	const Number& AbstractSolidObject::get_electrical_charge() const
 	{
 		return this->electrical_charge;
 		/*
@@ -524,7 +524,7 @@ namespace larus
 		 */
 	}
 
-	const RealNumber& AbstractSolidObject::get_electrical_field() const
+	const Number& AbstractSolidObject::get_electrical_field() const
 	{
 		return this->electrical_field;
 		/*
@@ -533,7 +533,7 @@ namespace larus
 		 */
 	}
 
-	const RealNumber& AbstractSolidObject::get_electrical_potential() const
+	const Number& AbstractSolidObject::get_electrical_potential() const
 	{
 		return this->electrical_potential;
 		/*
@@ -542,7 +542,7 @@ namespace larus
 		 */
 	}
 
-	const RealNumber& AbstractSolidObject::get_electrical_resistivity() const
+	const Number& AbstractSolidObject::get_electrical_resistivity() const
 	{
 		return this->electrical_resistivity;
 		/*
@@ -551,7 +551,7 @@ namespace larus
 		 */
 	}
 
-	const RealNumber& AbstractSolidObject::get_electrical_impedance() const
+	const Number& AbstractSolidObject::get_electrical_impedance() const
 	{
 		return this->electrical_impedance;
 		/*
@@ -560,7 +560,7 @@ namespace larus
 		 */
 	}
 
-	const RealNumber& AbstractSolidObject::get_electrical_resistance() const
+	const Number& AbstractSolidObject::get_electrical_resistance() const
 	{
 		return this->electrical_resistance;
 		/*
@@ -569,7 +569,7 @@ namespace larus
 		 */
 	}
 
-	const RealNumber& AbstractSolidObject::get_electrical_current() const
+	const Number& AbstractSolidObject::get_electrical_current() const
 	{
 		return this->electrical_current;
 		/*
@@ -578,7 +578,7 @@ namespace larus
 		 */
 	}
 
-	const RealNumber& AbstractSolidObject::get_fluidity() const
+	const Number& AbstractSolidObject::get_fluidity() const
 	{
 		return this->fluidity;
 		/*
@@ -587,7 +587,7 @@ namespace larus
 		 */
 	}
 
-	const RealNumber& AbstractSolidObject::get_hardness() const
+	const Number& AbstractSolidObject::get_hardness() const
 	{
 		return this->hardness;
 		/*
@@ -596,7 +596,7 @@ namespace larus
 		 */
 	}
 
-	const RealNumber& AbstractSolidObject::get_temperature() const
+	const Number& AbstractSolidObject::get_temperature() const
 	{
 		return this->temperature;
 		/*
@@ -605,7 +605,7 @@ namespace larus
 		 */
 	}
 
-	const RealNumber& AbstractSolidObject::get_velocity() const
+	const Number& AbstractSolidObject::get_velocity() const
 	{
 		return this->velocity;
 		/*
@@ -614,7 +614,7 @@ namespace larus
 		 */
 	}
 
-	const RealNumber& AbstractSolidObject::get_speed() const
+	const Number& AbstractSolidObject::get_speed() const
 	{
 		return this->speed;
 		/*
@@ -623,7 +623,7 @@ namespace larus
 		 */
 	}
 
-	const RealNumber& AbstractSolidObject::get_tension() const
+	const Number& AbstractSolidObject::get_tension() const
 	{
 		return this->tension;
 		/*
@@ -632,7 +632,7 @@ namespace larus
 		 */
 	}
 
-	const RealNumber& AbstractSolidObject::get_plane_angle() const
+	const Number& AbstractSolidObject::get_plane_angle() const
 	{
 		return this->plane_angle;
 		/*
@@ -641,7 +641,7 @@ namespace larus
 		 */
 	}
 
-	const RealNumber& AbstractSolidObject::get_melting_point() const
+	const Number& AbstractSolidObject::get_melting_point() const
 	{
 		return this->melting_point;
 		/*
@@ -650,7 +650,7 @@ namespace larus
 		 */
 	}
 
-	const RealNumber& AbstractSolidObject::get_specific_heat() const
+	const Number& AbstractSolidObject::get_specific_heat() const
 	{
 		return this->specific_heat;
 		/*
@@ -659,7 +659,7 @@ namespace larus
 		 */
 	}
 
-	const RealNumber& AbstractSolidObject::get_heat_capacity() const
+	const Number& AbstractSolidObject::get_heat_capacity() const
 	{
 		return this->heat_capacity;
 		/*
@@ -668,7 +668,7 @@ namespace larus
 		 */
 	}
 
-	const RealNumber& AbstractSolidObject::get_mechanical_energy() const
+	const Number& AbstractSolidObject::get_mechanical_energy() const
 	{
 		return this->mechanical_energy;
 		/*
@@ -677,7 +677,7 @@ namespace larus
 		 */
 	}
 
-	const RealNumber& AbstractSolidObject::get_kinetic_energy() const
+	const Number& AbstractSolidObject::get_kinetic_energy() const
 	{
 		return this->kinetic_energy;
 		/*
@@ -686,7 +686,7 @@ namespace larus
 		 */
 	}
 
-	const RealNumber& AbstractSolidObject::get_potential_energy() const
+	const Number& AbstractSolidObject::get_potential_energy() const
 	{
 		return this->potential_energy;
 		/*
@@ -695,7 +695,7 @@ namespace larus
 		 */
 	}
 
-	const RealNumber& AbstractSolidObject::get_index_of_refraction() const
+	const Number& AbstractSolidObject::get_index_of_refraction() const
 	{
 		return this->index_of_refraction;
 		/*
@@ -704,7 +704,7 @@ namespace larus
 		 */
 	}
 
-	const RealNumber& AbstractSolidObject::get_plasticity() const
+	const Number& AbstractSolidObject::get_plasticity() const
 	{
 		return this->plasticity;
 		/*
@@ -713,7 +713,7 @@ namespace larus
 		 */
 	}
 
-	const RealNumber& AbstractSolidObject::get_speed_of_sound() const
+	const Number& AbstractSolidObject::get_speed_of_sound() const
 	{
 		return this->speed_of_sound;
 		/*

@@ -30,6 +30,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 #include "larus/defines.h"
 
+
 namespace larus
 {
     class Vector
@@ -41,15 +42,15 @@ namespace larus
             Vector();
             ~Vector();
 
-            RealNumber operator [] (const String&) const;
-            RealNumber& operator [] (const String&);
+            Number operator [] (const String&) const;
+            Number& operator [] (const String&);
 
             Vector operator + (const Vector&) const;
             Vector operator - (const Vector&) const;
 
-            RealNumber magnitude() const;
-            RealNumber argument() const;
-            RealNumber azimuthal() const;
+            Number magnitude() const;
+            Number argument() const;
+            Number azimuthal() const;
     };
 }
 

@@ -48,5 +48,5 @@ bool vectors_test()
     std::cout << "arg(V3) = " << (vector3.argument()) << " rad = " << (vector3.argument().to_degree()) << " degree" << std::endl;
 
     std::cout << "----- END OF TEST 1 -----" << std::endl;
-    return ((int)(vector3.argument().to_degree().get_value()) == 53);
+    return ((int)((vector3.argument().to_degree().get_value()).to_double()) == 53);
 }

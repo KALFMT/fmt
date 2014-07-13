@@ -6,7 +6,7 @@
 
 bool vectors_test();
 bool kinematics_1_test();
-std::pair<larus::Boolean, std::vector<larus::String>> RealNumber_test();
+std::pair<larus::Boolean, std::vector<larus::String>> Number_test();
 
 int main()
 {
@@ -39,9 +39,9 @@ int main()
         return 1;
     }
 
-    std::cout << "Test 3 (RealNumbers): ";
+    std::cout << "Test 3 (Numbers): ";
 
-    std::pair<larus::Boolean, std::vector<larus::String>> test = RealNumber_test();
+    std::pair<larus::Boolean, std::vector<larus::String>> test = Number_test();
 
     if(test.first)
     {
@@ -50,7 +50,7 @@ int main()
     else
     {
         std::cout << "FAILED" << std::endl;
-        std::cout << "RealNumbers Test Result:" << std::endl;
+        std::cout << "Numbers Test Result:" << std::endl;
 
         for (std::vector<larus::String>::const_iterator it = test.second.begin(); it != test.second.end(); it++)
         {
