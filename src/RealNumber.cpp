@@ -251,7 +251,7 @@ namespace larus
         return std::log(this->value);
     }
 
-    RealNumber RealNumber::AbsVal () const
+    RealNumber RealNumber::abs () const
     {
         return std::abs(this->value);
     }
