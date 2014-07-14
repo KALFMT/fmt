@@ -22,8 +22,8 @@ namespace larus
         public:
             Number();
             Number(const int& operand);
-        Number(const double& operand);
-        Number(const float& operand);
+            Number(const double& operand);
+            Number(const float& operand);
             Number(const Number& operand);
             Number(PrimitiveNumber operand);
             ~Number();
