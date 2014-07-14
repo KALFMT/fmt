@@ -85,6 +85,8 @@ namespace larus
 namespace larus
 {
     class Number;
+    class Expression;
+    class Variable;
     typedef std::map<String,Number> Dimentions;
 }
 
